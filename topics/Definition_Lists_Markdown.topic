@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/html-entities.dtd">
+
+<topic xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       title="Definition lists"
+       id="Definition_Lists_Markdown">
+
+    <p>To create definition lists, for example, to specify terms and their definitions, use the following markup.
+        Specify the term on the first line. On the next line, type a colon followed by a space and the definition.</p>
+    <p>It also accepts multiline definitions and lists, including nested ones.</p>
+    <p>Use <code>style</code> attribute to specify the list layout.</p>
+        <table>
+        <tr>
+            <td>Markup</td>
+            <td>Result</td>
+        </tr>
+        <tr>
+            <td>
+                <code-block lang="plain text">
+                    {style="narrow"}
+                    First Term
+                    : This is the definition of the first term.
+
+                    Second Term
+                    : This is the definition of the second term.
+                </code-block>
+            </td>
+            <td>
+                <deflist style="narrow">
+                    <def title="First Term">
+                    This is the definition of the first term.
+                    </def>
+                    <def title="Second Term">
+                        This is the definition of the second term.
+                    </def>
+                </deflist>
+            </td>
+        </tr>
+            <tr>
+                <td>
+                    <code-block lang="plain text">
+                        {style="wide"}
+                        /customers
+                        : Get customers.
+
+                        /customers/{customerId}
+                        : Get customer by ID.
+                    </code-block>
+                </td>
+                <td>
+                    <deflist style="wide">
+                        <def title="/customers">
+                            Get customers.
+                        </def>
+                        <def title="/customers/{customerId}">
+                            Get customer by ID.
+                        </def>
+                    </deflist>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code-block lang="plain text">
+                        {style="medium"}
+                        getFoo()
+                        : Returns the current value of Foo.
+
+                        setBar(String)
+                        : Assigns the provided string to Bar.
+                    </code-block>
+                </td>
+                <td>
+                    <deflist style="medium">
+                        <def title="getFoo()">
+                            <p>Returns the current value of <code>Foo</code>.</p>
+                        </def>
+                        <def title="setBar(String)">
+                            <p>Assigns the provided string to <code>Bar</code>.</p>
+                        </def>
+                    </deflist>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code-block lang="plain text">
+                        {style="compact"}
+                        -o
+                        : Open a file.
+
+                        -c
+                        : Close a file.
+                    </code-block>
+                </td>
+                <td>
+                    <deflist style="compact">
+                        <def title="-o">
+                            Open a file.
+                        </def>
+                        <def title="-c">
+                            Close a file.
+                        </def>
+                    </deflist>
+                </td>
+            </tr>
+        </table>
+    <note><p>Currently, it is not possible to apply other attributes, like style or sorting, to the Markdown definition lists, so if you need them,
+        use the <a href="Definition_lists.topic">semantic markup</a>.</p></note>
+</topic>

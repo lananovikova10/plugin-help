@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/html-entities.dtd">
+
+<topic xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       title="Reuse a content in another topic"
+       id="Reuse_a_content_in_another_topic">
+    <p>
+        To avoid content duplication in several places, you can reuse any part of the content
+        in any number of topics.
+        When you update the original content, %product% will update the content in other places.
+    </p>
+    <p>Warnings and other admonitions are often repeated and so are good candidates for content reuse.</p>
+    <chapter title="Make a piece of content reusable">
+    <procedure id="make-snippet-reusable">
+        <p>
+            So, for example, you need to have the same warning on top of several topics,
+            so you can have it written in a single place and reference it in all others.
+        </p>
+        <step>Create a separate topic for the warning.
+        <code-block lang="XML">
+            <![CDATA[
+            <topic
+                title="Warnings"
+                id="Warnings_library"
+                is-library="true">
+            ]]>
+        </code-block>
+        </step>
+        <step>Add the <code>is-library="true"</code> attribute to the <code>topic</code> element.
+            Library topics are not included in the table of contents.
+        </step>
+        <step>Wrap a warning content in the
+            <code>snippet</code> element with an <code>id</code>. Do not use whitespaces in the <code>id</code>.
+        <code-block lang="XML">
+            <![CDATA[
+            <snippet id="generic_warning">
+                <warning>This version support ended on January 14, 2020.
+                Download the latest version.</warning>
+            </snippet>
+            ]]>
+        </code-block>
+        </step>
+    </procedure>
+        <warning><p>Do not use snippet id to reference the anchor, the link will be broken.</p></warning>
+    </chapter>
+    <chapter title="Include reusable content">
+    <procedure id="include-reusable-content">
+        <p>You can reuse the snippet with the same ID multiple times, even in the same topic.
+            It is also handy for table headings with the same set of columns.</p>
+        <step>To include reused content, use the
+            <code>include</code>
+            element.</step>
+        <step>Set the
+            <code>from</code>
+            attribute that points to the topic where the included content resides and the
+            <code>element-id</code>
+            attribute that matches the
+            <code>id</code> attribute of the snippet.
+        <code-block lang="XML">
+            <![CDATA[
+                <include from="warning_topic.xml" element-id="generic_warning"/>
+                <procedure title="Do some work">
+                <step>
+                    Do this.
+                </step>
+                <step>
+                Do that.
+                </step>
+                </procedure>
+            ]]>
+        </code-block>
+        </step>
+    </procedure>
+    </chapter>
+</topic>

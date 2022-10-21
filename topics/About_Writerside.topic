@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/html-entities.dtd">
+
+<topic xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       title="Getting started"
+       id="About_Writerside" help-id="About Sample Product;About_Sample_Product">
+    <include from="lib.topic" element-id="install-plugin"/>
+    <p>Once you’ve installed the plugin you need to create a new documentation project.
+    </p>
+    <include from="lib.topic" element-id="create-new-project"/>
+</topic>

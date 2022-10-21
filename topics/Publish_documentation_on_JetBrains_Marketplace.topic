@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/html-entities.dtd">
+
+<topic xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       title="Publish documentation on JetBrains Marketplace"
+       id="Publish_documentation_on_JetBrains_Marketplace">
+    
+    <p>%product% allows you to publish documentation on the separate Documentation tab on the plugin page on JetBrains Marketplace
+        instead of taking the user to an external page or using a custom page.</p>
+
+    <procedure>
+        <step>Place the documentation project in your plugin's repository or in a separate one.</step>
+        <step><a href="Local_build.topic">Build the help instance locally</a> to produce a ZIP archive.</step>
+        <step>Send your plugin's ID (5 digits) and a ZIP archive name to our team.</step>
+        <step>Our team will create the TeamCity build configuration and send the link to you.</step>
+        <step>You will be able to build the documentation, then publish it to staging to check.</step>
+        <step><p>The documentation will appear in the <control>Custom pages</control> section of the plugins' page.</p>
+            <img src="plugin-page.png" alt="Custom pages view" border-effect="line"/>
+            <p>Click <control>Preview</control> to see how users will see it.</p>
+        </step>
+        <step>Go back to the TeamCity and promote the docs to production.
+        </step>
+    </procedure>
+</topic>

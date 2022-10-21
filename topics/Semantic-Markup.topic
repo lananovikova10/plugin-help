@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/html-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
+       id="Semantic-Markup"
+       title="Semantic Markup">
+    <p>%product% allows writing docs using semantic markup, which you can use in <code>.topic</code> files
+        on its own or inject into Markdown topics when you need elements Markdown doesn't support,
+        like tabs, collapsible content blocks, and complex tables.</p>
+    <p>Semantic markup is XML-based and looks similar to XML tags, but you do not need to understand XML in detail or know all the elements by heart.</p>
+    <p>%product% provides paired tags completion, assistance, and validation for all semantic elements.</p>
+    <p>Think of them as building blocks that you use to define what type of content you're adding to the topic.</p>
+    <p>Semantic tags define what an element is doing, rather than how it looks,
+        for example, <a href="Structural_elements.topic" anchor="procedure-block"><code>procedure</code></a> describes a set of steps to accomplish,
+        and <a href="Inline_formatting.topic" anchor="ui-path"><code>ui-path</code></a> contains a path to a certain interface element.</p>
+    <p>Elements can be block and inline. Block elements, like, chapters, procedures, tables, and paragraphs, define the structure, and can contain other elements.
+        For example, the <code>procedure</code> element contains a few <code>step</code> elements.</p>
+    <p>Inline elements are used to mark up a text inside a block element or to add meaning to it.
+        For example, the <a href="Inline_formatting.topic" anchor="emphasis"><code>emphasis</code></a> element is used to mark a word or a phrase italic,
+        while the <a href="Inline_formatting.topic" anchor="control"><code>control</code></a> is used to highlight the name of the user interface element, like a button or a field,
+        so that all the UI elements in the docs will look consistent.</p>
+    <p>To know more about the tag without opening documentation on the web, hover over it
+        — the tag documentation provides the tag's short description and usage examples.</p>
+    <img src="documentation-tag.png" alt="Documentation for semantic tags" border-effect="line"/>
+    <p>%product% has validation rules that define where and how each tag can be used.
+        Built-in inspections will warn you if you put an element in the wrong position or forgot some required attributes.</p>
+    <p>For example, a <code>title</code> is required for a <code>chapter</code>,
+        so if you miss a title, an element will be underlined and you'll see a message addressing this in the preview area.
+    To navigate to the issue and fix it, click a line number.</p>
+    <img src="chapter-no-title.png" alt="Block elements validation" border-effect="line" width="894"/>
+    <!--Assistance, completion, tags documentation, conversion on the fly, live templates-->
+    <p>You can type <code>&lt;</code> to see the whole list of tags available in a certain context.</p>
+    <img alt="Semantic elements list pop-up" src="semantic-elements.png" border-effect="line" width="578"/>
+    <p>To make your life easier, %product% provides live templates and on-the-fly Markdown to semantic markup conversion.
+    </p>
+</topic>

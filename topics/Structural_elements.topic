@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/html-entities.dtd">
+
+<topic xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       title="Structural elements"
+       id="Structural_elements">
+
+    <p>
+        Structure your topics to organize information in them. Structured content helps users to find information
+        faster.
+    </p>
+    <p>The topic can consist of several structural elements that contain all the contents.
+        There are chapters, procedures, paragraphs, TL;DR blocks, and admonition blocks (tips, notes, and warnings).
+    </p>
+
+    <chapter title="Chapter" id="chapter-block">
+        <p>Use the <code>chapter</code> tag to define the portions of the information related to a single
+        concept.</p>
+        <p>By default, an in-topic table of contents will be generated from chapter's titles and displayed on the right.
+            You can change it using a <a instance="sd" href="Manage_in-page_table_of_contents.topic" anchor="change-structure"><code>show-structure-for</code></a> attribute.</p>
+        <p>You can add subchapters to chapters. The header level of the chapter depends on the chapter level.
+            For example, a top level chapter will be H2 and a chapter nested inside it — H3.
+        </p>
+        <p>The <code>chapter</code> element has the following attributes:</p>
+        <deflist>
+            <def title="title">
+                <p><format color="Red">required</format> Define a chapter heading. It will be displayed on the page and in the right TOC.</p>
+            </def>
+            <def title="id">
+                <p>Specify a unique identifier to use as an anchor and generate a meaningful URL to it.
+                </p>
+            </def>
+            <def title="collapsible">
+                <p>Use it to make the chapter collapsible. Keep in mind that users cannot use
+                    <shortcut>Ctrl/Cmd+F</shortcut> to search for information in collapsed sections, so don't hide important information.
+                </p>
+            </def>
+            <def title="default-state">
+                <p><code>[collapsed|expanded]</code> Specify the default state for the collapsible block. By default it is collapsed.
+                </p>
+            </def>
+            <def title="caps">
+                <p><code>[title|sentence|upper|lower|aswritten]</code> Specify in which case to display title.</p>
+            </def>
+        </deflist>
+    </chapter>
+    <chapter title="Procedure" id="procedure-block">
+        <p>
+            Use the <code>procedure</code> tag for describing a sequence of steps you need to follow to perform a task. Wrap each
+            step with the <code>step</code> tag.
+        </p>
+        <p>Procedures stand out visually (they have a border) so that you can easily spot instructions
+            if you skim through the help page.
+        </p>
+        <p>The <code>procedure</code> element has the following attributes:</p>
+        <deflist>
+            <def title="title">
+                <p>Define a procedure heading. It won't be displayed in the right TOC
+                    unless you specify it using a <code>show-structure-for</code> attribute.</p>
+            </def>
+            <def title="id">
+                <p>Specify a unique identifier to use as an anchor and generate a meaningful URL to it.</p>
+            </def>
+            <def title="style">
+                <p><code>[steps|choices]</code> Specify the steps style: numbered sequence or equal options.
+                </p>
+                <tabs>
+                    <tab title="steps">
+                        <procedure title="A procedure with numbered steps">
+                            <step>Step 1.</step>
+                            <step>Step 2.</step>
+                            <step>Step 3.</step>
+                        </procedure>
+                    </tab>
+
+                    <tab title="choices">
+                        <procedure title="A procedure with choices" style="choices">
+                            <step>Option 1.</step>
+                            <step>Option 2.</step>
+                            <step>Option 3.</step>
+                        </procedure>
+                    </tab>
+
+                </tabs>
+            </def>
+            <def title="collapsible">
+                <p>Use it to make the chapter collapsible. Keep in mind that users cannot use
+                    <shortcut>Ctrl/Cmd+F</shortcut> to search for information in collapsed sections, so don't hide important information.
+                </p>
+            </def>
+            <def title="default-state">
+                <p><code>[collapsed|expanded]</code> Specify the default state for the collapsible block. By default, it is collapsed.
+                </p>
+            </def>
+            <def title="caps">
+                <p>Specify in which case to display title: title, sentence, upper, lower, or as written.</p>
+            </def>
+        </deflist>
+    <p>To quickly convert a list to a procedure, use the Convert list element to procedure intention action.
+        A bullet list will convert into a procedure with choices, a decimal list — to a procedure with numbered steps.</p>
+    </chapter>
+    <chapter title="Tip, note, and warning" id="admonition-blocks">
+        <list>
+            <li>
+                Use a <code>tip</code> for optional information.
+            </li>
+            <li>
+                Use a <code>note</code> for important information that you want to highlight.
+            </li>
+            <li>
+                Use a <code>warning</code> for critical information.
+            </li>
+        </list>
+
+        <p>
+            Wrap text inside of tips, notes, and warnings in the <code>p</code> tag.
+        </p>
+
+        <tabs>
+            <tab title="tip">
+                <table>
+                    <tr>
+                        <td width="50%">Markup</td>
+                        <td width="50%">Result</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code-block lang="XML">
+                            <![CDATA[
+                                <tip>
+                                    <p>
+                                        This is a tip.
+                                    </p>
+                                </tip>
+                                ]]>
+                        </code-block>
+                        </td>
+                        <td>
+                            <tip>
+                                <p>
+                                    This is a tip.
+                                </p>
+                            </tip>
+                        </td>
+                    </tr>
+                </table>
+            </tab>
+            <tab title="note">
+                <table>
+                    <tr>
+                        <td width="50%">Markup</td>
+                        <td width="50%">Result</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code-block lang="XML">
+                            <![CDATA[
+                                <note>
+                                    <p>
+                                        Note this.
+                                    </p>
+                                </note>
+                                ]]>
+                        </code-block>
+                        </td>
+                        <td>
+                            <note>
+                                <p>
+                                    Note this.
+                                </p>
+                            </note>
+                        </td>
+                    </tr>
+                </table>
+            </tab>
+            <tab title="warning">
+                <table>
+                    <tr>
+                        <td width="50%">Markup</td>
+                        <td width="50%">Result</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code-block lang="XML">
+                            <![CDATA[
+                                <warning>
+                                    <p>
+                                        You shall not pass.
+                                    </p>
+                                </warning>
+                                ]]>
+                        </code-block>
+                        </td>
+                        <td>
+                            <warning>
+                                <p>
+                                    You shall not pass.
+                                </p>
+                            </warning>
+                        </td>
+                    </tr>
+                </table>
+            </tab>
+        </tabs>
+    </chapter>
+    <chapter title="Paragraph" id="p">
+            <p>
+                Use the <code>p</code> tag to create paragraphs. Use paragraphs in lists, tables, procedures, deflists if
+                there's more than one paragraph. Always use the <code>p</code> tag in <a anchor="chapter-block">chapters</a>,
+                <a anchor="admonition-blocks">tips, notes, and warnings</a>.
+            </p>
+
+            <table>
+                <tr>
+                    <td width="50%">Markup</td>
+                    <td width="50%">Result</td>
+                </tr>
+                <tr>
+                    <td>
+                        <code-block lang="XML">
+                            <!--@formatter:off-->
+                            <![CDATA[
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna
+                            aliqua.
+                        </p>
+                        <p>
+                            Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo consequat.
+                        </p>
+                        ]]>
+                            <!--@formatter:on-->
+                        </code-block>
+                    </td>
+                    <td>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                        <p>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        <p>The <code>p</code> element has the following attributes:</p>
+        <deflist>
+            <def title="id">
+                <p>
+                    If you need to <a href="Links_and_references.topic" anchor="a-anchor">refer to a paragraph</a> from somewhere, you can
+                    specify the <code>id</code> attribute for it.
+                </p>
+            </def>
+        </deflist>
+    </chapter>
+    <chapter title="TL;DR">
+    <p>
+        Use the <code>tldr</code> tag to introduce important facts or prerequisites about the feature you describe. Place it as
+        the first element of a topic and wrap each fact with the <code>p</code> tag.
+    </p>
+
+        <p>It can be only one <code>tldr</code> element per page.</p>
+
+    <p>
+        Use <code>tldr</code> only for introducing small amounts of information. No more than three elements are allowed
+        inside of it.
+    </p>
+
+    <tabs>
+        <tab title="Markup">
+            <code-block lang="XML">
+                <!--@formatter:off-->
+                <![CDATA[
+                <tldr>
+                    <p>
+                        Shortcut: <shortcut>Ctrl+Space</shortcut>
+                    </p>
+                    <p>
+                        Configure: <ui-path>Settings / Preferences | Editor | Code Completion</ui-path>
+                    </p>
+                </tldr>
+                ]]>
+                <!--@formatter:on-->
+            </code-block>
+        </tab>
+        <tab title="Result">
+            <img src="microformat_example.png" alt="Microformat on the page" width="467"/>
+        </tab>
+    </tabs>
+    </chapter>
+</topic>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/html-entities.dtd">
+
+<topic xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       title="Summary elements"
+       id="Summary_elements">
+
+    <chapter title="Link summary" id="link-summary">
+        <p>
+            Use the <code>link-summary</code> element in the target topic to display its summary in the link popup.
+        </p>
+        <code-block lang="XML">
+                <![CDATA[
+            <topic xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/stardust/topic.v2.xsd"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   title="Links"
+                   id="Links">
+
+                <link-summary>This information is displayed in the link popup</link-summary>
+                ...
+            ]]>
+            </code-block>
+    </chapter>
+    <chapter title="Card summary">
+        <p>Use it to specify the topic summary and display it on the card on the <a href="Section_starting_page.topic">starting page</a>,
+            so that a user can evaluate what the target topic is about before clicking.
+            Otherwise, you can write the summary in the <code>summary</code> attribute.</p>
+        <code-block lang="XML">
+            <![CDATA[
+               <topic xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/stardust/topic.v2.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               title="Links"
+               id="Links">
+
+            <card-summary>This information is displayed in the card on the starting page.</card-summary>
+            ...
+            ]]>
+        </code-block>
+    </chapter>
+    <chapter title="Web summary">
+        <p>Use it to specify the short topic summary for search engines.
+        </p>
+        <code-block lang="XML">
+            <![CDATA[
+               <topic xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/stardust/topic.v2.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               title="Links"
+               id="Links">
+
+            <web-summary>This is information for the search engines.</web-summary>
+            ...
+            ]]>
+        </code-block>
+    </chapter>
+    <p>
+        For each of these elements, you can either write the text fragment or specify the <code>rel</code> attribute
+            with the element ID to use it as a summary.
+        It can be any element that contains text, %instance% will extract the text from it.</p>
+        <code-block lang="XML">
+            <![CDATA[
+            <topic xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/stardust/topic.v2.xsd"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   title="Links"
+                   id="Links">
+
+                <link-summary rel="my-paragraph"/>
+                ...
+                <p id="my-paragraph">
+                    This is the text to use as a link summary.
+                </p>
+            ]]>
+        </code-block>
+</topic>

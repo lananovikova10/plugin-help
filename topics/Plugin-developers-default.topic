@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/html-entities.dtd">
+
+<topic xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       title="Getting started"
+       id="Plugin-developers-default">
+    <web-file-name>getting-started.html</web-file-name>
+
+    <p>%product% is a plugin for IntelliJ-based IDEs that let you to write, structure,
+        preview, build, and test documentation.</p>
+    <p>
+        This section will help you get started and show how to do basic things with %product%.
+    </p>
+    <p>
+        You will learn how to install the plugin, start a documentation project, create a topic from template,
+        and preview it.
+    </p>
+    <chapter title="Install the plugin">
+        <include from="lib.topic" element-id="download-plugin"/>
+    </chapter>
+    <p>After you have installed %product%, you need to either create a new documentation project or a documentation module
+        inside an existing project with a source code. Let's go with the second option.
+    </p>
+    <chapter title="Add documentation to your dev project">
+        <include from="lib.topic" element-id="create-instance"/>
+    </chapter>
+    <chapter title="Create a topic from template">
+        <p>To set up your plugin's minimum viable documentation in minutes,
+            create a few topics from ready-to-use templates.</p>
+        <include from="lib.topic" element-id="create-topic-from-template"/>
+        <p>Override the template's content with your own,
+            change the image to yours to illustrate the process.
+            You may want to add the dark version of the image, read <a href="Visual_elements.topic" anchor="dark-image">how to do it here.</a></p>
+    </chapter>
+<!--    <chapter title="Preview a topic and navigate to errors">-->
+<!--    </chapter>-->
+    <p>Continue working on documentation: <a href="Add_a_topic.topic">create more topics from scratch</a>, edit content,
+    and <a href="Local_build.topic">build documentation locally</a>.</p>
+</topic>

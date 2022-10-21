@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rules SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/redirection-rules.dtd">
+<rules>
+
+    <rule id="4c9dfd22">
+        <description>Created after removal of "How to combine SML with Markdown" from Writerside</description>
+        <accepts>how-to-combine-sml-with-markdown.html</accepts>
+    </rule>
+    <rule id="64efba84">
+        <description>Created after removal of "Definition Lists" from Writerside</description>
+        <accepts>definition-lists.html</accepts>
+    </rule>
+    <rule id="52c66ff4">
+        <description>Created after removal of "Changing topic title" from Writerside</description>
+        <accepts>changing-topic-title.html</accepts>
+    </rule>
+    <rule id="632065f5">
+        <description>Created after removal of "Code blocks" from Writerside</description>
+        <accepts>code-blocks.html</accepts>
+    </rule>
+    <rule id="1e566375">
+        <description>Created after removal of "Code block" from Writerside</description>
+        <accepts>code-block.html</accepts>
+    </rule>
+    <rule id="3b8a9718">
+        <description>Created after removal of "Deploy" from Plugin-developers</description>
+        <accepts>Deploy.html</accepts>
+    </rule>
+    <rule id="79fef1f3">
+        <description>Created after removal of "Test" from Writerside</description>
+        <accepts>test.html</accepts>
+    </rule>
+    <rule id="594a4ce2">
+        <description>Created after removal of "Test" from Writerside</description>
+        <accepts>test.html</accepts>
+    </rule>
+    <rule id="11a1fd46">
+        <description>Created after removal of "Reuse a single topic" from Writerside</description>
+        <accepts>reuse-a-single-topic.html</accepts>
+    </rule>
+    <rule id="2df506bf">
+        <description>Created after removal of "Reuse a single topic" from Writerside</description>
+        <accepts>reuse-a-single-topic.html</accepts>
+    </rule>
+    <rule id="3da2b938">
+        <description>Created after removal of "lib" from Writerside</description>
+        <accepts>lib.html</accepts>
+    </rule>
+    <rule id="b1ffee8">
+        <description>Created after removal of "Deploy" from Writerside</description>
+        <accepts>deploy.html</accepts>
+    </rule>
+    <rule id="60241240">
+        <description>Created after removal of "Getting started" from Writerside</description>
+        <accepts>plugin-developers-default.html</accepts>
+    </rule>
+    <rule id="1b775877">
+        <description>Created after removal of "Deploy" from Writerside</description>
+        <accepts>deploy.html</accepts>
+    </rule>
+    <rule id="2459c880">
+        <description>Created after removal of "Deploy" from Writerside</description>
+        <accepts>deploy.html</accepts>
+    </rule>
+    <rule id="19ee1052">
+        <description>Created after removal of "Listeners" from Writerside</description>
+        <accepts>plugin-listeners.html</accepts>
+    </rule>
+    <rule id="60bed8f">
+        <description>Created after removal of "PSI Elements" from Writerside</description>
+        <accepts>psi-elements.html</accepts>
+    </rule>
+    <rule id="4439ab73">
+        <description>Created after removal of "Introduction" from Writerside</description>
+        <accepts>introduction.html</accepts>
+    </rule>
+    <rule id="71563a7e">
+        <description>Created after removal of "Introduction" from Plugin-developers</description>
+        <accepts>Introduction.html</accepts>
+    </rule>
+    <rule id="72ec1918">
+        <description>Created after removal of "Customize the look" from Writerside</description>
+        <accepts>styling-and-layout.html</accepts>
+    </rule>
+    <rule id="480acd9e">
+        <description>Created after removal of "Variables" from Plugin-developers</description>
+        <accepts>Variables.html</accepts>
+    </rule>
+    <rule id="492eb9d1">
+        <description>Created after removal of "Titles Behavior" from Writerside</description>
+        <accepts>test-titles-behavior.html</accepts>
+    </rule>
+    <rule id="34ec3d5e">
+        <description>Created after removal of "test titles behavior" from Plugin-developers</description>
+        <accepts>test-titles-behavior.html</accepts>
+    </rule>
+    <rule id="263d9868">
+        <description>Created after removal of "test titles behavior" from Plugin-developers</description>
+        <accepts>test-titles-behavior.html</accepts>
+    </rule>
+    <rule id="261e61ed">
+        <description>Created after removal of "Newly added topic" from Plugin-developers</description>
+        <accepts>new-topic.html</accepts>
+    </rule>
+    <rule id="261e61ed">
+        <description>Created after removal of "Newly added topic" from Plugin-developers</description>
+        <accepts>new-topic.html</accepts>
+    </rule>
+</rules>

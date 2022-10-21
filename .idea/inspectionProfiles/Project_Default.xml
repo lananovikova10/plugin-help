@@ -1,0 +1,15 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="WrsStyleCheckerInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="WrsStyleCheckerInspectionMarkdown" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="XPathBasedInspection" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="user-defined">
+        <map />
+      </option>
+      <option name="disabled">
+        <set />
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

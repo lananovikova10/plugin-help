@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/html-entities.dtd">
+
+<topic xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       title="Reuse multiple topics at once"
+       id="Reuse_multiple_topics_at_once">
+
+    <p>
+        You can reuse a single snippet and multiple topics at once from a table of contents.
+    </p>
+    <p>For example, if the installation and setup flow is applicable for multiple instances.
+    </p>
+    <chapter title="Make a table of contents section reusable">
+    <procedure>
+        <p>Create a <emphasis>TOC library</emphasis> which is the same as an instance,
+            but is used to store the toc-elements for reuse.</p>
+        <p>The TOC library contains topics grouped in snippets that can be reused in other products.</p>
+        <include from="lib.topic" element-id="create-library"/>
+        <step>In the TOC library <code>.tree</code> file group toc-elements under a snippet element and assign an <code>id</code>.
+            <code-block lang="XML" noinject="true">
+        <![CDATA[
+                    <snippet id="installation-guide">
+                       <toc-element topic="Install.topic"/>
+                       <toc-element topic="Setup.topic" toc-title="Initial setup"/>
+                       <toc-element topic="Update.topic"/>
+                       <toc-element topic="Uninstall.topic"/>
+                    </snippet>
+                ]]>
+        </code-block>
+        </step>
+        <step>Another option is to create a <a href="Manage_table_of_contents.topic" anchor="wrapper-topic">wrapper topic</a> that includes all the needed topics
+            and assign an <code>id</code> attribute to it.</step>
+        <code-block lang="XML" noinject="true">
+            <![CDATA[
+                <toc-element toc-title="Installation_guide.topic" id="installation-guide">
+                       <toc-element topic="Install.topic"/>
+                       <toc-element topic="Setup.topic" toc-title="Initial setup"/>
+                       <toc-element topic="Update.topic"/>
+                       <toc-element topic="Uninstall.topic"/>
+                </toc-element>
+                ]]>
+        </code-block>
+    </procedure>
+    </chapter>
+    <chapter title="Reuse multiple topics at once">
+    <procedure>
+        <p>You can reuse both toc-elements and snippets from TOC library by their ids.</p>
+        <p>To reuse the tree section:</p>
+        <step>Add the <code>include</code> tag to a tree.</step>
+        <step>In the <code>from</code> attribute specify an instance id you want to include a wrapper or a snippet from,
+            in this case, it is <emphasis>toc_chunks</emphasis>.</step>
+        <step> In the <code>target</code> attribute specify the element <code>id</code>.
+        </step>
+    </procedure>
+    <table>
+        <tr>
+            <td width="33%">Instance/TOC library tree</td>
+            <td width="33%">Target tree</td>
+            <td width="33%">Web TOC</td>
+        </tr>
+        <tr>
+            <td>
+                <code-block lang="XML" noinject="true">
+                    <![CDATA[
+                <toc-element toc-title="Installation_guide.topic" id="installation-guide">
+                       <toc-element topic="Install.topic"/>
+                       <toc-element topic="Setup.topic" toc-title="Initial setup"/>
+                       <toc-element topic="Update.topic"/>
+                       <toc-element topic="Uninstall.topic"/>
+                </toc-element>
+                ]]>
+                </code-block>
+            </td>
+            <td>
+                <code-block lang="XML" noinject="true">
+                    <![CDATA[
+                    <include from="toc_chunks" target="installation-guide"/>
+                    ]]>
+                </code-block>
+            </td>
+            <td>
+                <img src="web-help-tree.png" border-effect="line" width="245" alt="Product help hierarchy on the Web"/>
+            </td>
+        </tr>
+    </table>
+    </chapter>
+</topic>

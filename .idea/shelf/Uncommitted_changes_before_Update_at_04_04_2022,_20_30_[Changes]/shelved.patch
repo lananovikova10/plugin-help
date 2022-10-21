@@ -1,0 +1,434 @@
+Index: .idea/runConfigurations.xml
+===================================================================
+diff --git a/.idea/runConfigurations.xml b/.idea/runConfigurations.xml
+deleted file mode 100644
+--- a/.idea/runConfigurations.xml	(revision dc1ece6de7386356d8d9b086f6af8e20418a519e)
++++ /dev/null	(revision dc1ece6de7386356d8d9b086f6af8e20418a519e)
+@@ -1,10 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="RunConfigurationProducerService">
+-    <option name="ignoredProducers">
+-      <set>
+-        <option value="com.android.tools.idea.compose.preview.runconfiguration.ComposePreviewRunConfigurationProducer" />
+-      </set>
+-    </option>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"7ff19041-a07b-4369-a5ec-097879b45c57\" name=\"Changes\" comment=\"WH-3781 Find usages draft\">\n      <change afterPath=\"$PROJECT_DIR$/topics/Find_in_files.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/sd.tree\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/sd.tree\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/topics/Find_usages.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/topics/Find_usages.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/topics/Multiple_cursors.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/topics/Multiple_cursors.xml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n    <option name=\"UPDATE_TYPE\" value=\"REBASE\" />\n  </component>\n  <component name=\"ProjectId\" id=\"20MWrnVtRgZhz4Sk4SRc4ZeCgsg\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\n    <property name=\"project.structure.last.edited\" value=\"Modules\" />\n    <property name=\"project.structure.proportion\" value=\"0.0\" />\n    <property name=\"project.structure.side.proportion\" value=\"0.0\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.pluginManager\" />\n    <property name=\"stardust.first.run4\" value=\"yes\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/images\" />\n    </key>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"7ff19041-a07b-4369-a5ec-097879b45c57\" name=\"Changes\" comment=\"\" />\n      <created>1635855139290</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1635855139290</updated>\n      <workItem from=\"1639512101343\" duration=\"117000\" />\n      <workItem from=\"1639512234360\" duration=\"177000\" />\n      <workItem from=\"1639512492493\" duration=\"14330000\" />\n      <workItem from=\"1639585413633\" duration=\"16277000\" />\n      <workItem from=\"1639690979638\" duration=\"971000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"WH-3781 Find usages draft\">\n      <created>1639604398943</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1639604398943</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State>\n              <option name=\"FILTERS\">\n                <map>\n                  <entry key=\"branch\">\n                    <value>\n                      <list>\n                        <option value=\"main\" />\n                      </list>\n                    </value>\n                  </entry>\n                </map>\n              </option>\n            </State>\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"WH-3781 Find usages draft\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"WH-3781 Find usages draft\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision dc1ece6de7386356d8d9b086f6af8e20418a519e)
++++ b/.idea/workspace.xml	(date 1649093430519)
+@@ -4,28 +4,55 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="7ff19041-a07b-4369-a5ec-097879b45c57" name="Changes" comment="WH-3781 Find usages draft">
+-      <change afterPath="$PROJECT_DIR$/topics/Find_in_files.xml" afterDir="false" />
++    <list default="true" id="7ff19041-a07b-4369-a5ec-097879b45c57" name="Changes" comment="Wrap text with tags">
++      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/sd.tree" beforeDir="false" afterPath="$PROJECT_DIR$/sd.tree" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/topics/Find_usages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/topics/Find_usages.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/topics/Multiple_cursors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/topics/Multiple_cursors.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="grazie_rule" />
++      </list>
++    </option>
++  </component>
++  <component name="Git.Pull.Settings">
++    <option name="OPTIONS">
++      <set>
++        <option value="REBASE" />
++      </set>
++    </option>
++  </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="1.0" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+     <option name="UPDATE_TYPE" value="REBASE" />
+   </component>
++  <component name="HighlightingSettingsPerFile">
++    <setting file="file://$PROJECT_DIR$/topics/test.xml" root0="FORCE_HIGHLIGHTING" />
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
++  </component>
+   <component name="ProjectId" id="20MWrnVtRgZhz4Sk4SRc4ZeCgsg" />
++  <component name="ProjectLevelVcsManager">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+   <component name="PropertiesComponent">
++    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+@@ -36,13 +63,22 @@
+     <property name="project.structure.last.edited" value="Modules" />
+     <property name="project.structure.proportion" value="0.0" />
+     <property name="project.structure.side.proportion" value="0.0" />
+-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
++    <property name="settings.editor.selected.configurable" value="Errors" />
++    <property name="stardust.ffmpeg.path" value="/usr/local/bin/ffmpeg" />
+     <property name="stardust.first.run4" value="yes" />
++    <property name="stardust.last.selected.productstardust-help" value="sd" />
+   </component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/images" />
+     </key>
++  </component>
++  <component name="RunManager">
++    <configuration name="Writerside (ZIP)" type="StardustRunConfiguration" factoryName="save-as-zip">
++      <option name="folderPath" value="$PROJECT_DIR$/../Downloads" />
++      <option name="instanceName" value="Writerside" />
++      <method v="2" />
++    </configuration>
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+@@ -56,7 +92,72 @@
+       <workItem from="1639512234360" duration="177000" />
+       <workItem from="1639512492493" duration="14330000" />
+       <workItem from="1639585413633" duration="16277000" />
+-      <workItem from="1639690979638" duration="971000" />
++      <workItem from="1639690979638" duration="2106000" />
++      <workItem from="1639728482010" duration="3688000" />
++      <workItem from="1639996048571" duration="7618000" />
++      <workItem from="1640006367726" duration="2323000" />
++      <workItem from="1640008700682" duration="700000" />
++      <workItem from="1640190287689" duration="20000" />
++      <workItem from="1640190323356" duration="1252000" />
++      <workItem from="1642579934640" duration="2100000" />
++      <workItem from="1642683636858" duration="2060000" />
++      <workItem from="1642690999848" duration="1806000" />
++      <workItem from="1643021011356" duration="8826000" />
++      <workItem from="1643287472169" duration="110000" />
++      <workItem from="1643287641377" duration="17000" />
++      <workItem from="1643287670101" duration="6567000" />
++      <workItem from="1643642341620" duration="667000" />
++      <workItem from="1643643015013" duration="21079000" />
++      <workItem from="1643800019072" duration="29233000" />
++      <workItem from="1643921717164" duration="23744000" />
++      <workItem from="1644325322085" duration="35400000" />
++      <workItem from="1644837437042" duration="138000" />
++      <workItem from="1644837597184" duration="10019000" />
++      <workItem from="1645359174535" duration="384000" />
++      <workItem from="1645522772113" duration="7646000" />
++      <workItem from="1646124739705" duration="2102000" />
++      <workItem from="1646216686681" duration="4677000" />
++      <workItem from="1646231719612" duration="860000" />
++      <workItem from="1646233109406" duration="1417000" />
++      <workItem from="1646236488938" duration="442000" />
++      <workItem from="1646398976290" duration="2155000" />
++      <workItem from="1646415797583" duration="3110000" />
++      <workItem from="1646472218272" duration="12692000" />
++      <workItem from="1646826314984" duration="322000" />
++      <workItem from="1646826646033" duration="247000" />
++      <workItem from="1646826917319" duration="520000" />
++      <workItem from="1646827442647" duration="147000" />
++      <workItem from="1646827695625" duration="1782000" />
++      <workItem from="1646918151079" duration="1150000" />
++      <workItem from="1646923043538" duration="2103000" />
++      <workItem from="1646928445632" duration="645000" />
++      <workItem from="1646984806516" duration="45000" />
++      <workItem from="1646985229598" duration="635000" />
++      <workItem from="1646988071291" duration="264000" />
++      <workItem from="1646988338498" duration="87000" />
++      <workItem from="1646988428293" duration="719000" />
++      <workItem from="1647262469922" duration="902000" />
++      <workItem from="1647264668156" duration="151000" />
++      <workItem from="1647264826820" duration="33000" />
++      <workItem from="1647264879364" duration="644000" />
++      <workItem from="1647265691684" duration="3371000" />
++      <workItem from="1647518132676" duration="3124000" />
++      <workItem from="1647598148820" duration="17932000" />
++      <workItem from="1647869304392" duration="7074000" />
++      <workItem from="1648032451863" duration="3644000" />
++      <workItem from="1648048470778" duration="1447000" />
++      <workItem from="1648110137261" duration="7000" />
++      <workItem from="1648114174842" duration="3779000" />
++      <workItem from="1648128594479" duration="736000" />
++      <workItem from="1648153831224" duration="1221000" />
++      <workItem from="1648199926133" duration="8000" />
++      <workItem from="1648202396395" duration="958000" />
++      <workItem from="1648321291704" duration="8000" />
++      <workItem from="1648322650657" duration="704000" />
++      <workItem from="1648712513417" duration="5392000" />
++      <workItem from="1648808555097" duration="6789000" />
++      <workItem from="1649067931679" duration="8132000" />
++      <workItem from="1649092919703" duration="381000" />
+     </task>
+     <task id="LOCAL-00001" summary="WH-3781 Find usages draft">
+       <created>1639604398943</created>
+@@ -65,7 +166,189 @@
+       <option name="project" value="LOCAL" />
+       <updated>1639604398943</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="WH-3781 Find in files draft">
++      <created>1639725829084</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1639725829084</updated>
++    </task>
++    <task id="LOCAL-00003" summary="WH-3781 Gitignore">
++      <created>1639727988728</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1639727988728</updated>
++    </task>
++    <task id="LOCAL-00004" summary="WH-3781 Fix grammar">
++      <created>1640007262717</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1640007262717</updated>
++    </task>
++    <task id="LOCAL-00005" summary="WH-3879 Single-sourcing the content tutorials">
++      <created>1643795590745</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1643795590745</updated>
++    </task>
++    <task id="LOCAL-00006" summary="WH-3879 Animated gifs fix">
++      <created>1643795620184</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1643795620184</updated>
++    </task>
++    <task id="LOCAL-00007" summary="WH-3879 Reuse toc-chunk">
++      <created>1643810067028</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1643810067029</updated>
++    </task>
++    <task id="LOCAL-00008" summary="WH-3879 Reuse the whole topic">
++      <created>1643824001376</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1643824001376</updated>
++    </task>
++    <task id="LOCAL-00009" summary="WH-3879 Conditional content">
++      <created>1643976048034</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1643976048034</updated>
++    </task>
++    <task id="LOCAL-00010" summary="WH-3879 Variables draft">
++      <created>1644593109413</created>
++      <option name="number" value="00010" />
++      <option name="presentableId" value="LOCAL-00010" />
++      <option name="project" value="LOCAL" />
++      <updated>1644593109414</updated>
++    </task>
++    <task id="LOCAL-00011" summary="WH-3879 Fix project run">
++      <created>1644594405482</created>
++      <option name="number" value="00011" />
++      <option name="presentableId" value="LOCAL-00011" />
++      <option name="project" value="LOCAL" />
++      <updated>1644594405482</updated>
++    </task>
++    <task id="LOCAL-00012" summary="WH-3879 Use from-product attr">
++      <created>1644594520335</created>
++      <option name="number" value="00012" />
++      <option name="presentableId" value="LOCAL-00012" />
++      <option name="project" value="LOCAL" />
++      <updated>1644594520335</updated>
++    </task>
++    <task id="LOCAL-00013" summary="WH-3879 Create dummy ij product">
++      <created>1644611471441</created>
++      <option name="number" value="00013" />
++      <option name="presentableId" value="LOCAL-00013" />
++      <option name="project" value="LOCAL" />
++      <updated>1644611471441</updated>
++    </task>
++    <task id="LOCAL-00014" summary="WH-3879 Fix web-path">
++      <created>1644612780055</created>
++      <option name="number" value="00014" />
++      <option name="presentableId" value="LOCAL-00014" />
++      <option name="project" value="LOCAL" />
++      <updated>1644612780055</updated>
++    </task>
++    <task id="LOCAL-00015" summary="WH-3879 Fix web-path + add version">
++      <created>1644614675264</created>
++      <option name="number" value="00015" />
++      <option name="presentableId" value="LOCAL-00015" />
++      <option name="project" value="LOCAL" />
++      <updated>1644614675264</updated>
++    </task>
++    <task id="LOCAL-00016" summary="WH-3879 Fix web-path + add version">
++      <created>1644681386595</created>
++      <option name="number" value="00016" />
++      <option name="presentableId" value="LOCAL-00016" />
++      <option name="project" value="LOCAL" />
++      <updated>1644681386595</updated>
++    </task>
++    <task id="LOCAL-00017" summary="WH-3879 Add team-city-build-path">
++      <created>1644826371027</created>
++      <option name="number" value="00017" />
++      <option name="presentableId" value="LOCAL-00017" />
++      <option name="project" value="LOCAL" />
++      <updated>1644826371027</updated>
++    </task>
++    <task id="LOCAL-00018" summary="WH-3879 Fix path">
++      <created>1644828168219</created>
++      <option name="number" value="00018" />
++      <option name="presentableId" value="LOCAL-00018" />
++      <option name="project" value="LOCAL" />
++      <updated>1644828168219</updated>
++    </task>
++    <task id="LOCAL-00019" summary="Fix grammar">
++      <created>1644835818360</created>
++      <option name="number" value="00019" />
++      <option name="presentableId" value="LOCAL-00019" />
++      <option name="project" value="LOCAL" />
++      <updated>1644835818361</updated>
++    </task>
++    <task id="LOCAL-00020" summary="WH-3879 change xml to topic">
++      <created>1644908166619</created>
++      <option name="number" value="00020" />
++      <option name="presentableId" value="LOCAL-00020" />
++      <option name="project" value="LOCAL" />
++      <updated>1644908166619</updated>
++    </task>
++    <task id="LOCAL-00021" summary="WH-3879 change chunk to snippet">
++      <created>1644914627583</created>
++      <option name="number" value="00021" />
++      <option name="presentableId" value="LOCAL-00021" />
++      <option name="project" value="LOCAL" />
++      <updated>1644914627583</updated>
++    </task>
++    <task id="LOCAL-00022" summary="Migrate on a new scheme">
++      <created>1646812996988</created>
++      <option name="number" value="00022" />
++      <option name="presentableId" value="LOCAL-00022" />
++      <option name="project" value="LOCAL" />
++      <updated>1646812996988</updated>
++    </task>
++    <task id="LOCAL-00023" summary="Migrate on a new scheme: fix http-https, migrate code-blocks">
++      <created>1646825313847</created>
++      <option name="number" value="00023" />
++      <option name="presentableId" value="LOCAL-00023" />
++      <option name="project" value="LOCAL" />
++      <updated>1646825313847</updated>
++    </task>
++    <task id="LOCAL-00024" summary="Added module name">
++      <created>1646988506613</created>
++      <option name="number" value="00024" />
++      <option name="presentableId" value="LOCAL-00024" />
++      <option name="project" value="LOCAL" />
++      <updated>1646988506613</updated>
++    </task>
++    <task id="LOCAL-00025" summary="Local build section">
++      <created>1647869362867</created>
++      <option name="number" value="00025" />
++      <option name="presentableId" value="LOCAL-00025" />
++      <option name="project" value="LOCAL" />
++      <updated>1647869362867</updated>
++    </task>
++    <task id="LOCAL-00026" summary="Local build section, remove md">
++      <created>1647869412216</created>
++      <option name="number" value="00026" />
++      <option name="presentableId" value="LOCAL-00026" />
++      <option name="project" value="LOCAL" />
++      <updated>1647869412216</updated>
++    </task>
++    <task id="LOCAL-00027" summary="Wrap text with tags">
++      <created>1649093129194</created>
++      <option name="number" value="00027" />
++      <option name="presentableId" value="LOCAL-00027" />
++      <option name="project" value="LOCAL" />
++      <updated>1649093129194</updated>
++    </task>
++    <option name="localTasksCounter" value="28" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -82,7 +365,7 @@
+                   <entry key="branch">
+                     <value>
+                       <list>
+-                        <option value="main" />
++                        <option value="1.0" />
+                       </list>
+                     </value>
+                   </entry>
+@@ -93,10 +376,43 @@
+         </entry>
+       </map>
+     </option>
+-    <option name="oldMeFiltersMigrated" value="true" />
+   </component>
+   <component name="VcsManagerConfiguration">
+-    <MESSAGE value="WH-3781 Find usages draft" />
+-    <option name="LAST_COMMIT_MESSAGE" value="WH-3781 Find usages draft" />
++    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
++    <MESSAGE value="WH-3781 Find in files draft" />
++    <MESSAGE value="WH-3781 Gitignore" />
++    <MESSAGE value="WH-3781 Fix grammar" />
++    <MESSAGE value="WH-3879 Single-sourcing the content tutorials" />
++    <MESSAGE value="WH-3879 Animated gifs fix" />
++    <MESSAGE value="WH-3879 Reuse toc-chunk" />
++    <MESSAGE value="WH-3879 Reuse the whole topic" />
++    <MESSAGE value="WH-3879 Conditional content" />
++    <MESSAGE value="WH-3879 Variables draft" />
++    <MESSAGE value="WH-3879 Fix project run" />
++    <MESSAGE value="WH-3879 Use from-product attr" />
++    <MESSAGE value="WH-3879 Create dummy ij product" />
++    <MESSAGE value="WH-3879 Fix web-path" />
++    <MESSAGE value="WH-3879 Fix web-path + add version" />
++    <MESSAGE value="WH-3879 Add team-city-build-path" />
++    <MESSAGE value="WH-3879 Fix path" />
++    <MESSAGE value="Fix grammar" />
++    <MESSAGE value="WH-3879 change xml to topic" />
++    <MESSAGE value="WH-3879 change chunk to snippet" />
++    <MESSAGE value="Migrate on a new scheme" />
++    <MESSAGE value="Migrate on a new scheme: fix http-https, migrate code-blocks" />
++    <MESSAGE value="Added module name" />
++    <MESSAGE value="Local build section" />
++    <MESSAGE value="Local build section, remove md" />
++    <MESSAGE value="Wrap text with tags" />
++    <option name="LAST_COMMIT_MESSAGE" value="Wrap text with tags" />
++  </component>
++  <component name="XSLT-Support.FileAssociations.UIState">
++    <expand>
++      <path>
++        <item name="stardust-help" type="b2602c69:ProjectViewProjectNode" />
++        <item name="stardust-help" type="462c0819:PsiDirectoryNode" />
++      </path>
++    </expand>
++    <select />
+   </component>
+ </project>
+\ No newline at end of file

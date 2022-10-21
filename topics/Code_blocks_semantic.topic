@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/html-entities.dtd">
+
+<topic xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       title="Code snippets"
+       id="Code_blocks_semantic" help-id="1650124253574_Code_blocks">
+
+    <chapter title="Code block" id="code-block-tag">
+        <p>Use code blocks when you have to highlight multiple lines of code.</p>
+        <p>To add it to the topic, use the <code>code-block</code> tag.</p>
+        <p>It will be highlighted according to the language you specify
+            and the user will be able to copy it by clicking <img src="code-block__copy-button-icon.png" alt="code-block Copy button icon"/> icon.</p>
+        <p>The code block can include links, the syntax is <code>[[[alt text|URL]]]</code>.
+            For example, to refer to an article or an external specification.</p>
+        <p>The <code>code-block</code> element has the following attributes:</p>
+        <deflist>
+            <def title="lang">
+                <p>Specify the programming language.</p>
+            </def>
+            <def title="collapsible">
+                <p>Use it to make the code block collapsible.
+                </p>
+            </def>
+            <def title="default-state">
+                <p>If you've set <code>collapsible="true"</code>, select the default state. By default, it is collapsed.</p>
+                <tabs>
+                    <tab title="collapsed">
+                        <code-block collapsible="true" default-state="collapsed" lang="Java">
+                            public static void main(String[] args) {
+                            System.out.println("Hi!")
+                            }
+                        </code-block>
+                    </tab>
+                    <tab title="expanded">
+                        <code-block collapsible="true" default-state="expanded" lang="Java">
+                            public static void main(String[] args) {
+                            System.out.println("Hi!")
+                            }
+                        </code-block>
+                    </tab>
+                </tabs>
+            </def>
+            <def title="collapsed-title">
+                <p>Specify the title to display it, when the block is collapsed.</p>
+            </def>
+            <def title="collapsed-title-line-number">
+                <p>Specify the line to use as the title, when the block is collapsed.</p>
+            </def>
+            <def title="src">
+                <p>Use it to include a code snippet from the repository.
+                    The source file must be located under the <path>codeSnippets</path> directory.</p>
+            </def>
+            <def title="include-lines">
+                <p>Specify the range or the comma-separated list of lines that you need to include.</p>
+            </def>
+            <def title="include-symbol">
+                <p>Specify the code construction, like class or method name to include.
+                    The attribute value is a dot-separated path to the construction, for example, MyClass.Myfunction.</p>
+            </def>
+            <def title="show-white-spaces">
+                <p>Whether to mark an indentation with dots or not.</p>
+            </def>
+            <def title="prompt">
+                <p>Use to specify the prompt symbol to display at the beginning of each line of code.
+                    The code sample is copied without a prompt.</p>
+            </def>
+            <def title="ignore-vars">
+                <p>If set to <code>true</code> — %-variables will be escaped, which means nothing will be rendered instead of them.</p></def>
+            <def title="validate">
+                <p>Set true to validate the code in a snippet.
+                    It works only for the <a href="https://www.jetbrains.com/help/idea/discover-intellij-idea.html#IntelliJ-IDEA-supported-languages">IntelliJIDEA supported languages</a>.</p>
+            </def>
+            <def title="noinject">
+                <p>Specify if you do not want to validate the code block content as injected XML.</p>
+            </def>
+            <def title="disable-links">
+                <p>If you use links like <code>[[[alt text|URL]]]</code> inside a code block, you can also disable them using this setting. So this markup won't be considered a link.</p>
+            </def>
+        </deflist>
+    </chapter>
+    <chapter title="Inline code" id="inline-code">
+        <p>Use inline code when you need to wrap a short fragment of code in text,
+            for example, to highlight a name of a variable, a method, a function, or a terminal command.</p>
+        <p>To format some text as code wrap it with a <code>code</code> tag. It doesn't have any additional attributes.</p>
+        <table>
+            <tr>
+                <td>Markup</td>
+                <td>Result</td>
+            </tr>
+            <tr>
+                <td>
+                    <code-block lang="XML">
+                        <!--@formatter:off-->
+                        <![CDATA[
+                         To output a line on the screen use <code>echo "Hello world!"</code>.
+                        ]]>
+                        <!--@formatter:on-->
+                    </code-block>
+                </td>
+                <td>
+                    To output a line on the screen use <code>echo "Hello world!"</code>.
+                </td>
+            </tr>
+        </table>
+    </chapter>
+    <chapter title="Compare two code blocks" id="compare-two-code-blocks">
+    <p>To add two code snippets next to each other, use <code>compare</code> tag.</p>
+        <p>The <code>compare</code> element has the following attributes:</p>
+        <deflist>
+        <def title="style">
+            <p><code>[left-right|top-bottom]</code> Select the arrangement of the code snippets.</p>
+        </def>
+        <def title="first-title">
+            <p>Specify the first block title. By default, Before.</p>
+        </def>
+            <def title="second-title">
+                <p>Specify the second block title. By default, After.</p>
+        </def>
+        </deflist>
+        <tabs>
+            <tab title="Default">
+                <compare>
+                    <code-block
+                          lang="Java">
+                        public static void main(String[] args) {
+                        System.out.println("Hi!")
+                        }
+                    </code-block>
+                    <code-block
+                          lang="Kotlin">
+                        <![CDATA[
+                            @JvmStatic fun main(args: Array<String>) {
+                                println("Hi!")
+                            }
+                            ]]>
+                    </code-block>
+                </compare>
+            </tab>
+            <tab title="Custom titles" group-key="java">
+                <compare first-title="Before custom title" second-title="After custom title">
+                    <code-block
+                          lang="Java">
+                        public static void main(String[] args) {
+                        System.out.println("Hi!")
+                        }
+                    </code-block>
+                    <code-block
+                          lang="Kotlin">
+                        <![CDATA[
+                            @JvmStatic fun main(args: Array<String>) {
+                                println("Hi!")
+                            }
+                            ]]>
+                    </code-block>
+                </compare>
+            </tab>
+        </tabs>
+    </chapter>
+</topic>
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/html-entities.dtd">
+
+<topic xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       title="Writerside project structure"
+       id="Project_structure">
+
+    <p>A typical %product% project directory looks like this:</p>
+    <code-block>
+        ├── ab.tree
+        ├── project.ihp
+        ├── topics/
+        │   ├── lib_includes
+        │   │   └── lib.topic
+        │   ├── Topic1.md
+        │   └── Topic2.md
+        ├── images/
+        │   ├── screenshot1.png
+        │   ├── screenshot1_dark.png
+        │   ├── logo.svg
+        │   ├── some-video.mp4
+        │   └── cool-gif.gif
+        ├── code-snippets/
+        │   └── code-sample.py
+        ├── v.list
+        ├── redirection-rules.xml
+        └── c.list
+    </code-block>
+    <list>
+        <li><path>project.ihp</path>: a project configuration file, where you describe all modules and instances.</li>
+        <li><path>/topics</path>: a directory where you place <path>.md</path> or <path>.topic</path> files with actual content. You can change it in the <path>project.ihp</path> file.</li>
+        <li><path>/images</path>: a directory where you place images, GIFs, and videos. You can change it in the <path>project.ihp</path> file.</li>
+        <li id="tree-file"><path>.tree</path>: a file that configures a <a href="Manage_table_of_contents.topic">table of contents</a> structure and knows the order and hierarchy of your documents.</li>
+        <li><path>c.list</path>: a list of categories, used when adding groups of related links in the <a href="Links_and_references.topic" anchor="see-also">See also section</a> .</li>
+        <li><path>v.list</path>: a list of variables.</li>
+        <li><path>redirection-rules.xml</path>: a file where you can specify redirects.</li>
+    </list>
+
+   <p> The ones above are created automatically with the project, but you might be interested in creating the following ones as well:</p>
+<list>
+    <li><path>/folder-for-code-snippets</path>: to store the code snippets and refer them in the docs. Specify its name in the <code>snippets</code> attribute of the <code>project.ihp</code> file.</li>
+    <li><path>cfg/glossary.xml</path>: to store the termbase for your project and display a <a href="Tooltips.topic">tooltip</a> with the term descriptions in text.</li>
+    <li><path>/resource</path>: to store resources that users can download later from the help page.</li>
+    <li><path>r.list</path>: a list of downloadable resources.</li>
+</list>
+</topic>
