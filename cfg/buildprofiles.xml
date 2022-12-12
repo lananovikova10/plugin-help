@@ -6,9 +6,9 @@
         <web-root>http://www.jetbrains.com/idea/</web-root>
         <web-community-path>Developer Community:http://www.jetbrains.net/devnet/community/idea/kb</web-community-path>
         <download-page/>
-        <config-algolia-index>prod_WRITERSIDE_HELP</config-algolia-index>
-        <config-algolia-id>VUOAW8FBUO</config-algolia-id>
-        <config-algolia-api-key>552e48d80dc043b38404054e90b1f438</config-algolia-api-key>
+        <config-algolia-index>lana_teamcity_pd</config-algolia-index>
+        <config-algolia-id>0J2F033YWG</config-algolia-id>
+        <config-algolia-api-key>5c71ca83bb8afeb0507f4da9362b3fa0</config-algolia-api-key>
 
         <config-disqus-id>jetbrains</config-disqus-id>
         <config-disqus-show>false</config-disqus-show>
