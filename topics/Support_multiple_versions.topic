@@ -31,8 +31,8 @@
         web paths to them, and which one is current.</p>
     <code-block>
         [
-        {"version":"1.0","url":"/docs/1.0/","isCurrent":false},
-        {"version":"2.0","url":"/docs/2.0","isCurrent":true}
+            {"version":"1.0","url":"/docs/1.0/","isCurrent":false},
+            {"version":"2.0","url":"/docs/2.0","isCurrent":true}
         ]
     </code-block>
     <p>Host it by publicly available URL, for example, on GitHub.</p>

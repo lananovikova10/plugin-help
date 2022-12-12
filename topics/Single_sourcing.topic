@@ -9,8 +9,8 @@
     <p>%product% provides rich functionality for single sourcing and content reuse.</p>
     <p>Single sourcing the content means writing it once and
         then using in different contexts instead of copy-pasting. </p>
-       <p>You can reuse the topics, chapters, paragraphs, sentences,
-           and tree sections and customize them using filters and variables.</p>
+       <p>You can reuse topics, chapters, paragraphs, sentences,
+           and tree sections, and customize them for different outputs using filters and variables.</p>
 <!--    <p>Reuse a section of content in another topic.</p>-->
 <!--    <p>Topic reuse.</p>-->
 <!--    <p>toc tree reuse</p>-->

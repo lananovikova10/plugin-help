@@ -6,7 +6,8 @@
        title="Tutorial: Turn existing MD files into a documentation project"
        id="Turn_an_existing_MD_files_into_a_project">
 
-    <p>From this tutorial, you will learn how to turn a bunch of existing Markdown files
+    <p>
+        From this tutorial, you will learn how to turn a bunch of existing Markdown files
         that you already have locally into a documentation project.
     </p>
     <p>We will not only import but put them into a meaningful hierarchy

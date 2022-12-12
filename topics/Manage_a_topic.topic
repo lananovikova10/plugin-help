@@ -31,7 +31,7 @@
         </p>
         <procedure>
             <step>
-                Add the <code>web-file-name</code> element in the beginning of the topic and specify the file name with the .html extention.
+                Add the <code>web-file-name</code> element in the beginning of the topic and specify the file name with the .html extension.
                 <code-block lang="XML">
                     <![CDATA[
                 <topic xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/stardust/topic.v2.xsd"

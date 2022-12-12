@@ -15,7 +15,8 @@
             Specify the topic ID for internal reference or the page URL for external.
         </def>
         <def title="anchor" id="a-anchor">
-            Refer to a specific element ID or anchor element on the page.
+            <p>Refer to a specific element ID or anchor element on the page.</p>
+            <warning><p>Do not use a snippet id to reference an anchor, the link will be broken.</p></warning>
         </def>
         <def title="nullable">
            <p><code>[true|false]</code> By default, we check that links are valid and lead to either topic, anchor, or an existing external resource.

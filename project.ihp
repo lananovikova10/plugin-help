@@ -12,7 +12,7 @@
     <module name="stardust-help"/>
     <categories src="c.list"/>
     <topics dir="topics"/>
-    <images dir="images" version="1.0" web-path="images/"/>
+    <images dir="images" version="1.0" web-path="img/"/>
     <vars src="v.list"/>
     <snippets src="codeSnippets"/>
     <instance src="pd.tree" web-path="/plugin-developers/" version="main"/>

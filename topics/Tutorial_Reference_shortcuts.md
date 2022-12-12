@@ -16,4 +16,3 @@ the user will be able to pick a desired one on top of the page.
     <img src="shortcut-picker.gif" alt="A user picks a shortcut platform" preview-src="shortcut-picker-preview.png"/>
     </step>
 </procedure>
-

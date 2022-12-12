@@ -101,6 +101,10 @@
         A bullet list will convert into a procedure with choices, a decimal list — to a procedure with numbered steps.</p>
     </chapter>
     <chapter title="Tip, note, and warning" id="admonition-blocks">
+        <p id="admonitions">Tip, note, and warning are formatted text blocks used to highlight important information, warn users, or provide tips.
+            They are colored and have an icon to the left according to the block type.
+        </p>
+        <p>You can use text, lists, and visual elements inside them.</p>
         <list>
             <li>
                 Use a <code>tip</code> for optional information.
@@ -130,7 +134,7 @@
                             <![CDATA[
                                 <tip>
                                     <p>
-                                        This is a tip.
+                                        A piece of advice.
                                     </p>
                                 </tip>
                                 ]]>
@@ -139,7 +143,7 @@
                         <td>
                             <tip>
                                 <p>
-                                    This is a tip.
+                                    A piece of advice.
                                 </p>
                             </tip>
                         </td>
@@ -258,13 +262,13 @@
             </def>
         </deflist>
     </chapter>
-    <chapter title="TL;DR">
+    <chapter title="TL;DR" id="tldr">
     <p>
         Use the <code>tldr</code> tag to introduce important facts or prerequisites about the feature you describe. Place it as
         the first element of a topic and wrap each fact with the <code>p</code> tag.
     </p>
 
-        <p>It can be only one <code>tldr</code> element per page.</p>
+        <p>There can be only one <code>tldr</code> element per page.</p>
 
     <p>
         Use <code>tldr</code> only for introducing small amounts of information. No more than three elements are allowed

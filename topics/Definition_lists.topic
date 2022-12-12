@@ -9,11 +9,11 @@
     <p>Definition lists can be used to document frequently asked questions (FAQ) with answers, problems with solutions,
         a reference of commands, options, methods, API endpoints and parameters, and UI elements with their descriptions.</p>
     <p>The <code>deflist</code> element has the following attributes:</p>
-    <deflist>
+    <deflist id="deflist-attributes">
         <def title="style">
             <p><code>[full|wide|medium|narrow|compact]</code>
                 Specify the list layout.</p>
-            <tabs>
+            <tabs id="deflists-style">
                 <tab title="full (default)">
                     <p>
                         Use the default style to document FAQs or troubleshooting guides,
@@ -107,18 +107,21 @@
                 </tab>
             </tabs>
         </def>
-        <def title="title">
+        <def title="title" filter="semantic">
             <p>Define the title or use a <code>title</code> tag inside the deflist instead.</p>
         </def>
         <def title="collapsible">
-            <p><code>[true|false]</code>Add the <code>collapsible="true"</code> attribute to make a definition list collapsible.
+            <p><code>[true|false]</code> Add the <code>collapsible="true"</code> attribute to make a definition list collapsible.
                 By default, a collapsible list renders with all elements in the collapsed state, and the user can click each element to expand it.</p>
+            <note>
+                Only definition lists with <code>style="full"</code> (default value) can be collapsible.
+            </note>
         </def>
         <def title="default-state">
             <p><code>[collapsed|expanded]</code> If collapsible is set <code>true</code>, specify whether the default state is collapsed or expanded.</p>
         </def>
         <def title="sorted">
-            <p><code>[asc|desc]</code> Specify the sorting order.</p>
+            <p><code>[asc|desc]</code> None is used by default. Specify the sorting order, a list will be sorted alphabetically by definition titles.</p>
         </def>
     </deflist>
 </topic>

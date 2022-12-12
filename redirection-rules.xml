@@ -106,4 +106,32 @@
         <description>Created after removal of "Newly added topic" from Plugin-developers</description>
         <accepts>new-topic.html</accepts>
     </rule>
+    <rule id="34c24f2e">
+        <description>Created after removal of "Empty MD Topicghgh" from Writerside</description>
+        <accepts>empty-md-topicghgh.html</accepts>
+    </rule>
+    <rule id="3cea8e9f">
+        <description>Created after removal of "How to do things" from Writerside</description>
+        <accepts>how-to-do-things.html</accepts>
+    </rule>
+    <rule id="356fbdbf">
+        <description>Created after removal of "How to do things" from Writerside</description>
+        <accepts>how-to-do-things.html</accepts>
+    </rule>
+    <rule id="71ce20d5">
+        <description>Created after removal of "How to do things nicely" from Writerside</description>
+        <accepts>how-to-do-things-nicely.html</accepts>
+    </rule>
+    <rule id="51c7696e">
+        <description>Created after removal of "New topic" from Writerside</description>
+        <accepts>new-topic.html</accepts>
+    </rule>
+    <rule id="2deb19dc">
+        <description>Created after removal of "2022.09.2791" from Plugin-developers</description>
+        <accepts>2791.html</accepts>
+    </rule>
+    <rule id="2c6c152b">
+        <description>Created after removal of "Writing modes" from Writerside</description>
+        <accepts>writing-modes.html</accepts>
+    </rule>
 </rules>

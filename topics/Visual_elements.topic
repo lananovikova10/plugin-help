@@ -25,11 +25,11 @@
         </list>
         <p>You can override this behaviour using <a anchor="img-style" summary="Specify if an image should be inline or a separate block"><code>style</code></a> attibute.</p>
         <p>The <code>img</code> element has the following attributes:</p>
-        <deflist>
-            <def title="src">
+        <deflist id="image-attributes">
+            <def title="src" filter="semantic">
                 <p><format color="Red">required</format> Specify the image filename.</p>
             </def>
-            <def title="alt">
+            <def title="alt" filter="semantic">
                 <p><format color="Red">required</format> Add alternative text to images, gifs, and icons.
                     It is a short written description of an image that is important for content accessibility and search optimization.
                 </p>
@@ -72,7 +72,8 @@
         <p>The <code>video</code> element has the following attributes:</p>
         <deflist>
             <def title="src">
-                <p>Specify the video filename, YouTube or a YouTube video URL.</p>
+                <p>Specify the video filename, YouTube or a Vimeo video URL.
+                    For YouTube it accepts both full and shortened link format.</p>
             </def>
             <def title="width">
                 <p>Set the width of a video element.</p>
@@ -86,7 +87,8 @@
                     This is handy if you use a video instead of a gif image.</p>
             </def>
             <def title="preview-src">
-                <p>Specify a custom preview image.</p>
+                <p>Specify a custom preview image.
+                    By default, for YouTube we display a video thumbnail if it was specified when the video was uploaded. </p>
             </def>
         </deflist>
         <p>Below find examples of various video markup.</p>

@@ -24,7 +24,8 @@
     <rule id="36921bf6">
         <description>Created after removal of "Introduction" from Writerside</description>
         <accepts>introduction.html</accepts>
-    </rule>                    ]]>
+    </rule>
+        ]]>
     </code-block>
     <p>
         The <code>accepts-web-file-names</code> attribute is added to the <code>toc-element</code> that you select as a target:

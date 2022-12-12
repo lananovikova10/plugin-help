@@ -99,7 +99,7 @@
         <step>In the New Project window select <ui-path>Writerside | Writerside Project</ui-path> and click <control>Next</control>.</step>
         <step><p>Specify the project name, the directory to store the project, and click <control>Create</control>.
             The version is not configurable and doesn't influence anything.</p>
-            <img src="new-project.png" alt="New project creation window" border-effect="line"/>
+            <img src="new-project.png" alt="New project creation window" border-effect="rounded"/>
         </step>
         <p>The new project with one instance called <emphasis>Sample product</emphasis> will be created. You can <a href="Create_an_instance.topic" anchor="rename-instance">change an instance name</a> to something more meaningful.</p>
         <p>Learn more about the documentation project structure in the <a href="Project_structure.topic">Project structure section</a>.</p>
@@ -109,15 +109,21 @@
     <snippet id="create-instance">
         <procedure>
             <step>In the %product% tool window, click
-                <img src="icon_add.png" width="14" alt="Add"/>
+                <img src="icon_add.png" width="16" alt="Add"/>
                 or press
-                <shortcut key="NewElement"/>.
+                <shortcut key="NewElement"/> and choose <control>New Instance</control>.
                 <img src="create-new-module.png" width="480" alt="Create instance toolbar" border-effect="line" filter="mod"/>
             </step>
-            <step>Specify an instance name and ID.</step>
+            <step><p>Specify instance name. Instance ID will be filled with its first letter, you can override it.</p>
+            <note>
+                We recommend using a meaningful ID that resembles the instance name.
+                This ID will be used in the project’s configuration files, when filtering reusable pieces of content,
+                and it will also be the name of the <code>.tree</code> file.
+            </note>
+            </step>
             <step>(Optional) Specify a <code>web path</code> an instance help will be available by and <code>version</code> if you plan to maintain a few versions.</step>
-            <step>Deselect the <control>Allow search engine indexing</control> option if you don't want your content indexed by external search engines.
-                <img src="create-instance-2.png" width="480" alt="Fill the form for a new instance" border-effect="line"/>
+            <step>(Optional) Deselect the <control>Allow search engine indexing</control> option if you don't want your content indexed by external search engines.
+                <img src="create-instance-2.png" width="480" alt="Fill the form for a new instance" border-effect="rounded"/>
             </step>
             <step>Click OK.</step>
             <p>A new instance will appear in the toolbar with the ID in parentheses,
@@ -132,8 +138,9 @@
             <shortcut key="NewElement"/>.
             <img src="create-new-module.png" width="480" alt="Instance toolbar" border-effect="line" filter="mod"/>
         </step>
+        <step>Select <control>New Library</control>.</step>
         <step>Specify a library name and ID.
-            <img alt="Create a library" src="create-toc-lib.png" border-effect="line"/>
+            <img alt="Create a library" src="create-toc-lib.png" border-effect="rounded"/>
         </step>
         <step>Click OK.</step>
     </snippet>
@@ -147,7 +154,7 @@
     </snippet>
 
     <snippet id="open-preview">
-        In the main menu open <ui-path>View | Tool windows | Writerside Preview</ui-path>
+        In the main menu open <ui-path>View | Tool Windows | Writerside Preview</ui-path>
     </snippet>
 
     <snippet id="place-redirects">
@@ -161,7 +168,7 @@
             <step>
                 <p>
                     Add the <code>accepts-web-file-names</code> attribute to this <code>toc-element</code> and specify
-                    the HTML file name of the removed/renamed topic as its value like in the example below:
+                    the HTML filename of the removed/renamed topic as its value like in the example below:
                 </p>
                 <code-block lang="XML">
                     <![CDATA[
@@ -225,7 +232,7 @@
             title later if needed, see <a href="Changing_topic_title.topic"/>).
         </p>
         <p>
-            %product% uses the file name to automatically generate the <emphasis>topic ID</emphasis>, so it
+            %product% uses the filename to automatically generate the <emphasis>topic ID</emphasis>, so it
             must be unique within your project and meaningful so that you can easily reference it from other topics.
         </p>
     </snippet>
@@ -274,7 +281,7 @@
                 <p>In the <code>use-keymaps</code> element specify which keymaps can user select from in the picker on top of the page.
                     All values should start with either <code>primary_</code> or <code>secondary_</code> prefix.
                     The prefix won't be displayed to a user.</p>
-                <p>In the <code>src</code> tag specify the keymap file name.</p>
+                <p>In the <code>src</code> tag specify the keymap filename.</p>
                 <code-block filter="how-to" lang="xml" ignore-vars="true">
                     <![CDATA[
                     <?xml version="1.0" encoding="UTF-8"?>
@@ -341,7 +348,8 @@
             </step>
             <step><p>
                 Click <control>Topic from Template</control> and choose from a built-in template for different types of topics:
-                <control>How-to</control>, <control>Overview</control>, <control>Reference</control>, or <control>Tutorial</control>.
+                <control>How-to</control>, <control>Overview</control>, <control>Reference</control>,
+                and <control>Tutorial</control>, or <control>Section starting page</control>.
                 </p>
                 <tip>
                     <p>
@@ -362,4 +370,11 @@
         </procedure>
     </snippet>
 
+    <snippet id="generic-warning-2">
+
+    > This version support ended on January 14, 2022. Download the latest version.
+    >
+    {style="warning"}
+
+    </snippet>
     </topic>

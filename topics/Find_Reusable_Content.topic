@@ -3,7 +3,7 @@
 
 <topic xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       title="Find Reusable Content"
+       title="Find reusable content"
        id="Find_Reusable_Content">
 
     <p>You can locate the content what worth to be reused using IntelliJ IDE's feature called Find in Files.</p>

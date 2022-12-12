@@ -8,7 +8,7 @@
 
     <p>If you use a topic in several instances help,
         you can change topic, chapter, and procedures titles depending on the output.</p>
-    <chapter title="Use variables to change the topic title">
+    <chapter id="variables-in-title" title="Use variables to change the topic title">
     <procedure>
         <step>
             <p>Add a variable in <path>v.list</path> file and specify different values for each instance.</p>
@@ -33,11 +33,12 @@
     </procedure>
     </chapter>
 
-    <chapter title="Use filters to change the chapter title">
+    <chapter id="filters-in-title" title="Use filters or variables to change the chapter title">
     <procedure style="choices">
-        <p>If you reuse a chapter or a procedure, you can adjust its title using filters or the <code>instance</code> attribute. </p>
+        <p>If you reuse a chapter or a procedure,
+            you can adjust its title using filters or variables. </p>
         <step>
-            <p>Use the <code>instance</code> attribute in the title. </p>
+            <p>Use the <code>instance</code> variable in the title. </p>
             <code-block ignore-vars="true" lang="XML">
                 <![CDATA[
                 <snippet id="some-id">
@@ -51,8 +52,25 @@
                 </snippet>
                 ]]>
                 </code-block>
-            <p>In this case for all instances the title will be <emphasis>The base title</emphasis>,
-                while for the <code>ab</code> instance — <emphasis>The custom title</emphasis>.</p>
+            <p>In this case for all instances the title will be <emphasis>The base title</emphasis>, while for the <code>ab</code> instance — <emphasis>The custom title</emphasis>.</p>
+        </step>
+        <step>
+            <p>Use a custom <code>title</code> variable inside a snippet and redefine it in the include.</p>
+            <code-block ignore-vars="true" lang="XML">
+                <![CDATA[
+
+                <snippet id="id">
+                    <var name="title" value="An initial title"/>
+                    <chapter title="%title%">
+                     <p>This is a chapter.</p>
+                    </chapter>
+                </snippet>
+
+                <include from="topic-a.topic" element-id="id">
+                    <var name="title" value="A custom title"/>
+                </include>
+                ]]>
+            </code-block>
         </step>
         <step>
             <p>Use the <code>filter</code> attribute in the title. </p>

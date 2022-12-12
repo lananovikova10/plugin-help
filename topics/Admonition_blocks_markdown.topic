@@ -3,12 +3,10 @@
 
 <topic xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       title="Admonition blocks"
+       title="Tip, note, and warning"
        id="Admonition_blocks_markdown">
 
-    <p>Admonitions are formatted text blocks used to highlight important information, warn users, or provide tips.
-        They are colored and have an icon to the left according to the block type.
-    </p>
+    <include from="Structural_elements.topic" element-id="admonitions"/>
     <p>By default, the quote markup is rendered as a tip.
         But you can alter it using the <code>style</code> attribute placed in the curly brackets after the block.</p>
     <tabs>

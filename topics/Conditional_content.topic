@@ -93,7 +93,7 @@
             </code-block>
         </step>
     </procedure>
-    <procedure title="Filter the content in the included fragment">
+    <procedure title="Filter reusable content" id="filter-in-reuse">
         <step>
             <p>To include only certain parts of the original topic, use the <code>include</code> tag with
                 the <code>use-filter</code> attribute in your topic.</p>

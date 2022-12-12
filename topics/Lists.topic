@@ -70,7 +70,7 @@
             Specify the sorting order for alphabetical and numeral lists.
         </def>
         <def title="switcher-key">
-            Use to make elements switchable depending on the selected key.
+            Use to make elements switchable depending on the <a href="Switchable_content.topic">selected key</a>.
         </def>
     </deflist>
 </topic>

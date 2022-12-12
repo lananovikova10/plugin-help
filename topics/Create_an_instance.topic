@@ -19,7 +19,8 @@
     <include from="lib.topic" element-id="create-instance" use-filter="!mod"/>
     <p><a href="Create_an_instance.topic" anchor="change-instance-color">Change the instance icon color</a> to distinguish it from the others.</p>
     <procedure title="Rename an instance" id="rename-instance">
-        <p>Remember, an instance ID is used in the project configuration file, in a <path>.tree</path> file, and filters, so don't overuse it.</p>
+        <p>Remember, an instance ID is used in the project configuration file, in a <path>.tree</path> file,
+            and filters, so don't overuse it.</p>
         <step>Click
             <img src="rename.png" width="14" alt="Rename"/>
             or press <shortcut key="RenameElement"/>.</step>

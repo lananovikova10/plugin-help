@@ -50,7 +50,7 @@
     <procedure>
         <p>You can specify the instance to which an element should or should not display.</p>
         <step>
-            Add the <code>instance</code> attribute to the warning tag, use ! symbol and specify the ids of the instances
+            Add the <code>instance</code> attribute to the <code>warning</code> tag, use ! symbol and specify the ids of the instances
             where this warning should not be displayed.
             <code-block lang="xml">
                 <![CDATA[
@@ -62,7 +62,7 @@
         <step>You can add the <code>if</code> tag to select a specific fragment of content.
             <code-block lang="xml" noinject="true">
                 <![CDATA[
-                <warning instance="!sd"><p>This version of product support ended on January 14, 2021.</p>
+                <warning instance="!sd"><p>This version of product support ended on January 14, 2022.</p>
                     <p if instance="ac">Download the latest version <a href="link1">here</a>.</p>
                     <a if instance="!ac">Download the latest version <a href="link2">here</a>.</p>
                 </warning>

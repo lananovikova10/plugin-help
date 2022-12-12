@@ -13,9 +13,14 @@
         <toc-element topic="Support_multiple_versions.topic"/>
         <toc-element topic="Create_an_instance.topic"/>
     </toc-element>
+    <toc-element topic="Styling_and_Layout.topic" hidden="true"/>
     <toc-element topic="Topics.topic" id="topic">
         <toc-element topic="Add_a_topic.topic"/>
         <toc-element topic="Changing_topic_title.topic" toc-title="Change titles and IDs"/>
+        <toc-element toc-title="Edit topics">
+            <toc-element topic="Intention-actions.topic"/>
+            <toc-element topic="Use-live-templates-for-markup-elements.topic"/>
+        </toc-element>
         <toc-element topic="Manage_a_topic.topic"/>
         <toc-element topic="Manage_in-page_table_of_contents.topic"/>
         <toc-element topic="Preview_a_topic.topic"/>
@@ -28,7 +33,6 @@
     <toc-element toc-title="IntelliJ IDEs features for better writing">
         <toc-element topic="Navigation.topic"/>
         <toc-element topic="Find_in_files.topic"/>
-        <toc-element topic="Writing_modes.topic" hidden="true"/>
         <toc-element topic="Find_usages.topic"/>
         <toc-element topic="Column_selection.topic"/>
         <toc-element topic="Multiple_cursors.topic"/>

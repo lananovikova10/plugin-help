@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/html-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
+       id="Inspections"
+       title="Built-in tests and inspections">
+    <p>%product% provides you with 100+ auto tests checking for all that can go wrong in the documentation project.
+        So that you can focus on the content not markup and reference validity.</p>
+    <p>
+        All 100+ tests are packed as IDE inspections, so an IDE highlights problematic parts as you type,
+        and you can test your help instance in the IDE, without running a build or deploying it on staging.
+    </p>
+    <p>
+    </p>
+
+    <procedure title="Access all available inspections and their settings">
+
+
+    </procedure>
+
+    <chapter title="Instant analysis of the current topic">
+
+    <p>
+        The widget in the top-right corner of the editor displays the number of problems of each severity detected in the current file:
+    </p>
+    <img alt="Problems widget" src="problems-widget.png" width="166"/>
+    <p>
+
+    </p>
+<!--    <p>-->
+<!--        Click the widget to open the list of problems on the <control><property bundle="messages.IdeBundle" key="scope.current.file"/></control> tab-->
+<!--        of the <a href="Problems_Tool_Window.xml" nullable="true">Problems tool window</a>.-->
+<!--        You can also access the <control><property bundle="messages.IdeBundle" key="toolwindow.stripe.Problems_View"/></control> tool window by selecting-->
+<!--        <menupath><property bundle="messages.IdeBundle" key="FileChooser.viewMenuLabelText"/> | <property bundle="messages.IdeBundle" key="group.window.options"/> | <property bundle="messages.IdeBundle" key="toolwindow.stripe.Problems_View"/></menupath> or by pressing-->
+<!--        <shortcut key="ActivateProblemsViewToolWindow"/>.-->
+<!--    </p>-->
+<!--    <p>-->
+<!--            For each problem, you can see the suggested quick-fix by pressing <shortcut key="ShowIntentionActions"/>-->
+<!--            or by clicking <icon src="app.actions.intentionBulb.svg" alt="Show Quick Fixes"/>.-->
+<!--            You can also jump to the corresponding line in the editor by pressing <shortcut key="EditSource"/> or by-->
+<!--            double-clicking the problem in the tool window.-->
+<!--    </p>-->
+<!--    <p>-->
+<!--            Alternatively, click <icon src="app.actions.previewDetails.svg" alt="Open Editor Preview"/> to be able-->
+<!--            to view and fix problems in the tool window.-->
+<!--    </p>-->
+<!--    <p>The color stripe in the scrollbar also marks the detected code problems and helps you quickly access the corresponding-->
+<!--        lines without scrolling the file. Hover over a mark on the stripe to see the detected problem in a tooltip.-->
+<!--        Click a mark to jump to the corresponding line.</p>-->
+<!--    <p>-->
+<!--        You can jump from one highlighted problem to another within a file by clicking-->
+<!--        <icon src="app.actions.findAndShowNextMatches.svg" alt="the Next Highlighted Error button"/>-->
+<!--        <icon src="app.actions.findAndShowPrevMatches.svg" alt="the Next Highlighted Error button"/> in the widget-->
+<!--        or by pressing <shortcut key="GotoNextError"/> or <shortcut key="GotoPreviousError"/> accordingly.-->
+<!--        By default, the IDE will navigate you to problems according to their-->
+<!--        <a href="Configuring_Inspection_Severities.xml">severity</a>:-->
+<!--        errors > warnings > weak warnings > server problems > typos.</p>-->
+    </chapter>
+    <chapter title="Run a single inspection" id="run-single-inspection">
+    <p>
+        Additionally, you can run the necessary inspection or a set of inspections on the selected scope of files manually.
+        In this case, you will get a comprehensive report of all problems detected in the files.
+    </p>
+    <p>
+        Running a single inspection is useful in case you want to track a specific problem.
+        For example, are all the links valid.
+    </p>
+    <procedure>
+        <step>
+            From the main menu, select <ui-path>Code | Analyze Code | Run Inspection by Name…</ui-path>
+            or press <shortcut key="RunInspection"/>.
+        </step>
+        <step>
+            <p>
+                Type the inspection name in the popup. The suggestion list will show you inspections that match your
+                search request.
+            </p>
+            <p>
+                If you are not sure that you are selecting the correct inspection, you can view its description.
+                To do so, select an inspection in the popup and press <shortcut key="QuickJavaDoc"/>.
+            </p>
+            <img src="inspections-quick-docs.png" width="615" alt="Run inspection by name" border-effect="line"/>
+        </step>
+        <step>
+            Double-click the necessary inspection to open its settings.
+        </step>
+        <step>
+            <p>In the dialog that opens, select the scope of files that you want to analyze.</p>
+
+            <img src="inspectionByName.png" width="490" alt="Run inspection by name" border-effect="rounded"/>
+        </step>
+    </procedure>
+    </chapter>
+    <table>
+        <tr>
+            <td width="20%">Inspection</td>
+            <td width="70%">Description</td>
+            <td width="10%">Default Severity</td>
+        </tr>
+        <tr>
+            <td colspan="3"><control>Configuration checks</control></td>
+        </tr>
+        <tr>
+           <td>Duplicate category sort order</td>
+            <td>Checks if category sort order is unique.</td>
+            <td><img src="warning.png" alt="warning icon"/> </td>
+        </tr>
+        <tr>
+            <td colspan="3"><control>Content validity</control></td>
+        </tr>
+        <tr>
+            <td>&lt;available-only-for&gt; should be a child element</td>
+            <td>Detects available-only-for attributes in &lt;topic&gt;, &lt;chapter&gt;, and &lt;procedure&gt; elements.</td>
+            <td><img src="warning.png" alt="warning icon"/> </td>
+        </tr>
+        <tr>
+            <td>Code snippet file is empty</td>
+            <td>Detects empty files referenced via src in code blocks.</td>
+            <td><img src="warning.png" alt="warning icon"/> </td>
+        </tr>
+    </table>
+    <p><a href="Find_in_files.topic" anchor="find-option"/>
+    <a href="https://nowexistingthing.org/"/>
+    </p>
+</topic>

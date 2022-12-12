@@ -6,26 +6,29 @@
        title="Writerside project structure"
        id="Project_structure">
 
+    <p>To check what documentation project consists of, open a Project tool window by pressing <shortcut key="ActivateProjectToolWindow"/> or choosing
+    <ui-path>View | Tool Windows | Project</ui-path> in the main menu.</p>
     <p>A typical %product% project directory looks like this:</p>
     <code-block>
-        ├── ab.tree
-        ├── project.ihp
-        ├── topics/
-        │   ├── lib_includes
-        │   │   └── lib.topic
-        │   ├── Topic1.md
-        │   └── Topic2.md
-        ├── images/
-        │   ├── screenshot1.png
-        │   ├── screenshot1_dark.png
-        │   ├── logo.svg
-        │   ├── some-video.mp4
-        │   └── cool-gif.gif
-        ├── code-snippets/
-        │   └── code-sample.py
-        ├── v.list
-        ├── redirection-rules.xml
-        └── c.list
+        ├── sample_module/
+            ├── ab.tree
+            ├── project.ihp
+            ├── topics/
+            │   ├── lib_includes
+            │   │   └── lib.topic
+            │   ├── Topic1.md
+            │   └── Topic2.md
+            ├── images/
+            │   ├── screenshot1.png
+            │   ├── screenshot1_dark.png
+            │   ├── logo.svg
+            │   ├── some-video.mp4
+            │   └── cool-gif.gif
+            ├── code-snippets/
+            │   └── code-sample.py
+            ├── v.list
+            ├── redirection-rules.xml
+            └── c.list
     </code-block>
     <list>
         <li><path>project.ihp</path>: a project configuration file, where you describe all modules and instances.</li>

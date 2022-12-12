@@ -9,9 +9,9 @@
     <toc-element toc-title="Markup Reference" id="markup-ref">
         <toc-element topic="Table_of_contents_elements.topic"/>
         <toc-element topic="Semantic-Markup.topic">
+            <toc-element topic="Structural_elements.topic"/>
             <toc-element topic="Links_and_references.topic"/>
             <toc-element topic="Visual_elements.topic"/>
-            <toc-element topic="Structural_elements.topic"/>
             <toc-element topic="Inline_formatting.topic"/>
             <toc-element topic="Lists.topic"/>
             <toc-element topic="Definition_lists.topic"/>

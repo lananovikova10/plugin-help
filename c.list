@@ -3,6 +3,6 @@
         SYSTEM "https://resources.jetbrains.com/stardust/categories.dtd">
 <categories>
     <category id="ext" name="External Resources" order="2"/>
-    <category id="see_also" name="More on topics" order="1"/>
     <category id="how-to" name="How-to" order="3"/>
+    <category id="see_also" name="More on topics" order="1"/>
 </categories>

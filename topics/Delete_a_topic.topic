@@ -20,7 +20,7 @@
         </li>
         <li>
             Check that this topic does not contain content snippets that are reused in other topics
-            through <a href="Reuse_a_content_in_another_topic.topic">includes</a>.z
+            through <a href="Reuse_a_content_in_another_topic.topic">includes</a>.
         </li>
         <li>
             Place redirects from the deleted topic's URL so that users don't get the 404 error if they
@@ -52,7 +52,7 @@
                 In the <control>Remove TOC element</control> dialog, select the <control>Set redirect to</control>
                 option and choose the new target from the list:
             </p>
-            <img src="remove_topic_dialog.png" alt="Remomve TOC element dialog" width="460" border-effect="rounded"/>
+            <img src="remove_topic_dialog.png" alt="Remove TOC element dialog" width="460" border-effect="rounded"/>
         </step>
         <step>
             <p>

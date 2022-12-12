@@ -26,11 +26,10 @@
         </step>
 
         <step>
-            <p>In a popup, click <control>Link Topic Files to TOC...</control> to reuse the topic from the same instance
-                or <control>Include from Another Instance</control> to reuse the topic from another instance.
+            <p>In a popup, click <control>Link Topic Files to TOC...</control> to reuse the topic from other instances.
             </p>
-            <img src="include-from-another.png" alt="Reuse from another instance" border-effect="line" width="348"/>
-            <p>Then select the instance to include from and the element you want to include.
+            <img src="reuse-from-another.png" alt="Reuse from another instance" border-effect="line" width="348"/>
+            <p>Then select an element you want to include.
                 If the selected <code>toc-element</code> does not have an <code>include-id</code> attribute, you will be asked to specify it.</p>
             <p>
                 The topic appears in the <control>TOC</control>. Double-click it to open in the editor.
@@ -69,13 +68,13 @@
                 ]]>
                 </code-block>
             <p>
-                On the next line, add a <code>toc-element</code> tag referring to the topic file.
+                On the next line, add a <code>toc-element</code> tag referring to the existing topic file.
             </p>
             <p>For example, to add <path>New_topic.topic</path>, enter the following code:
             </p>
             <code-block lang="XML" noinject="true">
                     <![CDATA[
-                <toc-element topic="New_topic.topic"/>
+                <toc-element topic="New-topic.topic"/>
                 ]]>
                 </code-block>
             <p>To include <path>Some_topic.topic</path> from another instance, first add the <code>include-id</code>
@@ -83,7 +82,7 @@
             </p>
             <code-block lang="XML" noinject="true">
                 <![CDATA[
-                <toc-element topic="Some_topic.topic" include-id="some-topic"/>
+                <toc-element topic="Some-topic.topic" include-id="some-topic"/>
                 ]]>
             </code-block>
             <p>Then use the following code in the <path>.tree</path> file:</p>

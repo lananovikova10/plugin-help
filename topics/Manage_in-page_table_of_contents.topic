@@ -9,7 +9,7 @@
 
     <p>You can use the right in-page TOC to display chapters' and procedures' titles.</p>
     <p>By default, only chapter titles are displayed. You can change it using the attributes described below.</p>
-    <procedure title="Change the in-page TOC structure" id="change-structure">
+    <procedure title="Change the in-page TOC structure" id="change-structure" style="choices">
         <step>
             <p>
                 Inside the <code>topic</code> element, add the <code>show-structure</code> element with the <code>for</code> attribute.

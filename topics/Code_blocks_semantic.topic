@@ -14,9 +14,9 @@
         <p>The code block can include links, the syntax is <code>[[[alt text|URL]]]</code>.
             For example, to refer to an article or an external specification.</p>
         <p>The <code>code-block</code> element has the following attributes:</p>
-        <deflist>
-            <def title="lang">
-                <p>Specify the programming language.</p>
+        <deflist id="code-block-reference">
+            <def title="lang" filter="semantic">
+                <p>Specify the programming or markup language.</p>
             </def>
             <def title="collapsible">
                 <p>Use it to make the code block collapsible.
@@ -48,8 +48,8 @@
                 <p>Specify the line to use as the title, when the block is collapsed.</p>
             </def>
             <def title="src">
-                <p>Use it to include a code snippet from the repository.
-                    The source file must be located under the <path>codeSnippets</path> directory.</p>
+                <p>Use it to include a code snippet from the repository.</p>
+                <p>The source file must be located under the directory you've specified in the <code>snippets</code> attribute of the <code>project.ihp</code> file.</p>
             </def>
             <def title="include-lines">
                 <p>Specify the range or the comma-separated list of lines that you need to include.</p>
@@ -58,9 +58,9 @@
                 <p>Specify the code construction, like class or method name to include.
                     The attribute value is a dot-separated path to the construction, for example, MyClass.Myfunction.</p>
             </def>
-            <def title="show-white-spaces">
-                <p>Whether to mark an indentation with dots or not.</p>
-            </def>
+<!--            <def title="show-white-spaces">-->
+<!--                <p>Whether to mark an indentation with dots or not.</p>-->
+<!--            </def>-->
             <def title="prompt">
                 <p>Use to specify the prompt symbol to display at the beginning of each line of code.
                     The code sample is copied without a prompt.</p>
@@ -68,8 +68,10 @@
             <def title="ignore-vars">
                 <p>If set to <code>true</code> — %-variables will be escaped, which means nothing will be rendered instead of them.</p></def>
             <def title="validate">
-                <p>Set true to validate the code in a snippet.
-                    It works only for the <a href="https://www.jetbrains.com/help/idea/discover-intellij-idea.html#IntelliJ-IDEA-supported-languages">IntelliJIDEA supported languages</a>.</p>
+                <p>Set true to validate the code in a snippet.</p>
+                <note>It works only for the <a href="https://www.jetbrains.com/help/idea/discover-intellij-idea.html#IntelliJ-IDEA-supported-languages">
+                    IntelliJ IDEA Community Edition supported languages</a>.
+                    For languages supported by third-party plugins this setting won't work.</note>
             </def>
             <def title="noinject">
                 <p>Specify if you do not want to validate the code block content as injected XML.</p>

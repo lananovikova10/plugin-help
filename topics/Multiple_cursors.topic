@@ -20,7 +20,7 @@
             </step>
             <step>Press <shortcut key="SelectAllOccurrences"/> or or click
                 <control>Select All Occurrences</control>
-                <img style="inline" src="icons.actions.CheckMulticaret.svg" alt="Select All Occurrences"/> on the toolbar.
+                <img style="inline" src="CheckMulticaret.png" alt="Select All Occurrences"/> on the toolbar.
             </step>
             <step>Edit the <emphasis>width</emphasis> attribute in a few places.
                 <img src="Multiple_cursors.png" animated="true" alt="Multiple carets"/></step>

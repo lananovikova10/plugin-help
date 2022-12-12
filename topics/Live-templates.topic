@@ -4,7 +4,7 @@
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
        id="Live-templates"
-       title="Reuse repeating fragments">
+       title="Reuse repeating fragments with live templates">
         <p>
             Imagine you are typing the same content again and again, it can be a specific markup element with a specific structure or attributes,
             or a repeating fragment, like an admonition block, for example, a warning.</p>

@@ -19,7 +19,7 @@
                 <img src="icon_add.png" width="14" alt="Add"/> on the toolbar
                 or press <shortcut key="NewElement"/>.
             </p>
-            <img src="add-new-topic.png" width="296" alt="TOC with a place chosen for the new topic" border-effect="line"/>
+            <img src="reuse-a single-topic.png" width="296" alt="TOC with a place chosen for the new topic" border-effect="line"/>
         </step>
         <step>
             Select <control>Empty MD Topic</control> or <control>Empty SML Topic</control> (see <a href="Topics.topic" anchor="topic_formats"/>
@@ -31,9 +31,9 @@
             <p>
                 The newly created topic will appear in the TOC view and will open in the editor.
             </p>
-            <img src="add-new-topic-after.png" width="296" alt="New topic displayed in TOC" border-effect="line"/>
+            <img src="add-a-new-topic-after.png" width="296" alt="New topic displayed in TOC" border-effect="line"/>
             <p>
-                For instructions on how to move a topic around the TOC, see <a href="Manage_table_of_contents.topic"/>
+                For instructions on how to move a topic around the TOC, see <a href="Manage_table_of_contents.topic"/>.
             </p>
     </procedure>
     </chapter>

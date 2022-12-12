@@ -3,13 +3,13 @@
 
 <topic xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       title="Wrap text with tags&#65279;"
+       title="Wrap text with tags"
        id="Wrap_text_with_tags">
 
     <procedure title="Wrap your text with tags" id="wrap-text-with-tags">
         <step>
             Select a block of code, then press
-            <shortcut from-keymap-of="ij" key="SurroundWith"/>
+            <shortcut key="SurroundWith"/>
             to open the <control>Surround With</control> popup.
         </step>
         <step>

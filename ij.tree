@@ -7,5 +7,6 @@
                  start-page="IntelliJIDEA-default.topic">
 
     <toc-element topic="IntelliJIDEA-default.topic" />
+    <toc-element topic="Suggestions.md"/>
     <toc-element topic="How_to_combine_SML_with_Markdown.md"/>
 </instance-profile>

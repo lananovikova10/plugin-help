@@ -51,18 +51,32 @@
             However, you may need to <a href="Changing_topic_title.topic">change the topic title</a>. You can use the
             context menu entries to perform these actions.
         </p>
+        <tip>
+            <p>
+                If you've switched between topics and then want to open a specific topic in the editor,
+                use <control>Synchronize TOC and Editor</control> action.
+                Select In the %product% tool window, click
+                <img src="app.general.locate.png" width="14" alt="Add"/> on the toolbar
+                or press <shortcut key="Synchronize"/>.
+            </p>
+        </tip>
     </chapter>
     <chapter id="manage-order" title="Manage topic order">
-        <p>You can move topics in the TOC and change their position or depth.</p>
-        <procedure>
+        <p>
+            Configure the structure of your documentation instance in the Writerside tool window: drag-n-drop articles to change their order or hierarchy.
+        </p>
+        <p>
+            You can also edit the <code>instance_id.tree</code> file to configure the TOC.
+        </p>
+        <procedure title="Edit .tree file">
             <step>
-                Right-click the necessary topic in the %product% tool window and select the <control>Edit Toc element.</control>
-                <img src="edit-a-toc-element.png" alt="Edit Toc element" border-effect="line" width="400"/>
+                Right-click the necessary topic in the %product% tool window and select the <control>Go to TOC Element in instance-id.tree</control>.
+                <img src="go-to-element.png" alt="Edit Toc element" border-effect="line" width="305"/>
             </step>
             <step>In the <code>.tree</code> file, change the <code>toc-element</code> position manually or press
                 <shortcut key="Arrangement.Rule.Match.Condition.Move.Up"/> to move a line up and
                 <shortcut key="Arrangement.Rule.Match.Condition.Move.Down"/> to move a line down.
-                <img src="move-toc-elements-buttons.gif" alt="Moving toc elements using shortcuts"
+                <img src="edit-toc-tree.gif" alt="Moving toc elements using shortcuts"
                      preview-src="move-elements-buttons-preview.png"/>
             </step>
             <step>To put one topic inside another, split the <code>toc-element</code> into the opening and closing tags
@@ -121,9 +135,11 @@
                 </step>
                 <step>In the <code>.tree</code> file, add the <code>hidden="true"</code> attribute to the <code>toc-element</code> manually.
                 </step>
-                <code-block lang="XML"><![CDATA[
+                <code-block lang="XML">
+                    <![CDATA[
                     <toc-element topic="Getting_Started.topic" hidden="true"/>
-                    ]]></code-block>
+                    ]]>
+                </code-block>
         </procedure>
     </chapter>
     <chapter id="wrapper-topic" title="Make a wrapper for a few topics">
