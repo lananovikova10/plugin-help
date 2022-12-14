@@ -37,6 +37,7 @@
             </p>
     </procedure>
     </chapter>
+    <p>A paragraph between chapters with some log words. Antidisestablishmentarianism is threading.</p>
     <chapter title="Create topic from template" id="create-from-template">
         <include from="lib.topic" element-id="create-topic-from-template"/>
     </chapter>
