@@ -4,7 +4,11 @@ env:
   PRODUCT: stardust-help/pd
   ARTIFACT: webHelpPD2-all.zip
 
-on: [push]
+on:
+  push:
+    branches: ["main"]
+
+  workflow_dispatch:
 
 jobs:
   build-job:
