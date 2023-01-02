@@ -10,7 +10,7 @@ jobs:
   build-job:
     runs-on: ubuntu-latest
     container: 
-      image: registry.jetbrains.team/p/writerside/builder/writerside-builder:2.1.984
+      image: registry.jetbrains.team/p/writerside/builder/writerside-builder:2.1.931
       env:
         PRODUCT: stardust-help/pd
         ARTIFACT: webHelpPD2-all.zip
