@@ -1,9 +1,5 @@
 name: Build docs
 
-env:
-  PRODUCT: stardust-help/pd
-  ARTIFACT: webHelpPD2-all.zip
-
 on:
   push:
     branches: ["main"]
@@ -13,8 +9,11 @@ on:
 jobs:
   build-job:
     runs-on: ubuntu-latest
-    container:
+    container: 
       image: registry.jetbrains.team/p/writerside/builder/writerside-builder:2.1.984
+      env:
+        PRODUCT: stardust-help/pd
+        ARTIFACT: webHelpPD2-all.zip
     steps:
     - name: Help build
       run: | 
