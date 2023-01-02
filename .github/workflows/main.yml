@@ -1,0 +1,21 @@
+name: Build docs
+
+env:
+  PRODUCT: stardust-help/pd
+  ARTIFACT: webHelpPD2-all.zip
+
+on: [push]
+
+jobs:
+  build-job:
+    runs-on: registry.jetbrains.team/p/writerside/builder/writerside-builder:2.1.984
+    steps:
+      with:
+        name: artifact
+        path: |
+          artifacts/$ARTIFACT
+        run: | 
+          set -e
+          /opt/builder/bin/idea.sh helpbuilderinspect -source-dir . -product $PRODUCT -output-dir artifacts/ || true
+          echo "Test existing of $ARTIFACT artifact"
+          test -e artifacts/$ARTIFAC
