@@ -9,9 +9,6 @@
         <config-algolia-index>lana_teamcity_pd</config-algolia-index>
         <config-algolia-id>0J2F033YWG</config-algolia-id>
         <config-algolia-api-key>5c71ca83bb8afeb0507f4da9362b3fa0</config-algolia-api-key>
-
-        <config-disqus-id>jetbrains</config-disqus-id>
-        <config-disqus-show>false</config-disqus-show>
         <config-feedback-enabled>true</config-feedback-enabled>
         <config-feedback-widget>true</config-feedback-widget>
         <config-feedback-support>null</config-feedback-support>
@@ -27,9 +24,15 @@
             https://raw.githubusercontent.com/lananovikova10/versions-json/main/help-versions.json
         </config-versions-switcher>
         <custom-video-cover>video-cover.png</custom-video-cover>
-        <og-image>sample-image.png</og-image>
+        <og-image>https://blog.hubspot.de/hubfs/Germany/Blog_images/open-graph.jpg</og-image>
         <analytics-head-script-file>google-analytics.js</analytics-head-script-file>
         <analytics-body-html-file>google-analytics-noscript.html</analytics-body-html-file>
     </variables>
     <build-profile instance="sd"/>
+    <build-profile instance="pd">
+        <variables>
+            <primary-color>purple</primary-color>
+            <color-preset>vivid</color-preset>
+        </variables>
+    </build-profile>
 </buildprofiles>

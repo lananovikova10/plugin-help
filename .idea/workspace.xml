@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ff19041-a07b-4369-a5ec-097879b45c57" name="Changes" comment="Add section to CoC" />
+    <list default="true" id="7ff19041-a07b-4369-a5ec-097879b45c57" name="Changes" comment="Add section to CoC">
+      <change afterPath="$PROJECT_DIR$/pd.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/buildprofiles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/buildprofiles.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +28,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/topics/Links_and_references.topic" root0="FORCE_HIGHLIGHTING" />
@@ -507,6 +510,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/assets" />
       <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/resources" />
       <recent name="$PROJECT_DIR$" />
@@ -776,13 +780,6 @@
       <workItem from="1661272294621" duration="2362000" />
       <workItem from="1661424392474" duration="45000" />
       <workItem from="1661424439787" duration="598000" />
-    </task>
-    <task id="LOCAL-00093" summary="External redirects">
-      <created>1655907262274</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1655907262274</updated>
     </task>
     <task id="LOCAL-00094" summary="Local build action title changed">
       <created>1655911253915</created>
@@ -1120,7 +1117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666172284087</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="Add section to CoC">
+      <created>1672671075067</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1672671075067</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
