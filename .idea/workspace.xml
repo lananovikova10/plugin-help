@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ff19041-a07b-4369-a5ec-097879b45c57" name="Changes" comment="Add section to CoC">
-      <change afterPath="$PROJECT_DIR$/pd.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/buildprofiles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/buildprofiles.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7ff19041-a07b-4369-a5ec-097879b45c57" name="Changes" comment="Change accent color" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +24,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/topics/Links_and_references.topic" root0="FORCE_HIGHLIGHTING" />
@@ -781,13 +778,6 @@
       <workItem from="1661424392474" duration="45000" />
       <workItem from="1661424439787" duration="598000" />
     </task>
-    <task id="LOCAL-00094" summary="Local build action title changed">
-      <created>1655911253915</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1655911253915</updated>
-    </task>
     <task id="LOCAL-00095" summary="Local build action order of actions changed">
       <created>1655911426742</created>
       <option name="number" value="00095" />
@@ -1124,7 +1114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672671075067</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="Change accent color">
+      <created>1672825994557</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1672825994557</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1158,7 +1155,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Indent highlighting attribute explained" />
     <MESSAGE value="Comment the caches" />
     <MESSAGE value="Fix missing references" />
     <MESSAGE value="Add status attribute" />
@@ -1183,7 +1179,8 @@
     <MESSAGE value="Add CoC" />
     <MESSAGE value="Fix CoC, unhide" />
     <MESSAGE value="Add section to CoC" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add section to CoC" />
+    <MESSAGE value="Change accent color" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change accent color" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
