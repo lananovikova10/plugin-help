@@ -23,7 +23,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Build docs
-        uses: lananovikova10/writerside-actions@v1.0.0
+        uses: lananovikova10/writerside-actions@v1.0.1
         with:
           image: 'registry.jetbrains.team/p/writerside/builder/writerside-builder:2.1.984'
       - name: Upload artifact
