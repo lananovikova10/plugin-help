@@ -23,7 +23,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Build docs
-        uses: lananovikova10/writerside-actions@v1.0.4
+        uses: lananovikova10/writerside-actions@v1.0.5
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
