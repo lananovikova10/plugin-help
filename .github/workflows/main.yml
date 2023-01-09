@@ -20,10 +20,10 @@ jobs:
   build-job:
     runs-on: ubuntu-latest
     container: 
-      image: registry.jetbrains.team/p/writerside/builder/writerside-builder:2.1.985
+      image: registry.jetbrains.team/p/writerside/builder/writerside-builder:2.1.984
     steps:
       - name: Build docs
-        uses: lananovikova10/writerside-actions@v2.3
+        uses: lananovikova10/writerside-actions@v2.4
           
   deploy:
     environment:
