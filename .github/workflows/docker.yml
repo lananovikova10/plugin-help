@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build Writerside docs with docker
-        uses: lananovikova10/writerside-docker-action@v1.0
+        uses: lananovikova10/writerside-docker-action@v1.1
 
   deploy:
     environment:
